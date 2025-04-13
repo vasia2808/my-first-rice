@@ -1,0 +1,21 @@
+[window]
+padding = { x = 5, y = 5 }
+opacity = 0.92
+
+[font]
+normal = { family = "JetBrainsMono" }
+size = 11
+
+[colors.primary]
+background = "#191319"
+
+[colors]
+transparent_background_colors = true
+
+[cursor]
+style = { shape = "Beam", blinking = "Always" }
+blink_interval = 600
+blink_timeout = 0
+unfocused_hollow = false
+thickness = 0.2
+

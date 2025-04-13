@@ -1,0 +1,15 @@
+mode = drun
+
+width = 600
+height = 400
+
+normal_window = true
+no_actions = true
+hide_scroll = true
+prompt = Search
+sort_order = alphabetical
+allow_images = true
+image_size = 25
+columns = 2
+insensitive = true
+single_click = true

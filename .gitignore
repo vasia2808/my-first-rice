@@ -1,0 +1,6 @@
+__pycache__/
+config/qimgv/savedState.conf
+config/gtk-3.0/bookmarks
+config/zsh/.zhistory
+config/zsh/.zcompdump
+
