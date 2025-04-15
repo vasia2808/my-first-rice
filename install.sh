@@ -19,3 +19,7 @@ for app_name in `ls "$RICE_CONFIG_DIR"`
     mv "$primary" "$backup"
     ln -s "$rice" "$primary"
   done
+
+sudo pacman -Syu --needed alacritty fastfetch hypridle hyprland hyprlock hyprpaper mako neovim ranger rofi Thunar waybar wofi zsh
+
+yay -Syu --needed qimgv
