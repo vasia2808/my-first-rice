@@ -9,8 +9,8 @@ window#waybar {
 }
 
 window#waybar > box {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 tooltip {
@@ -20,8 +20,8 @@ tooltip {
 }
 
 .module {
-    margin-left: 6px;
-    margin-right: 6px;
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 #workspaces button {
@@ -45,3 +45,4 @@ tooltip {
 #workspaces button.empty {
     color: rgba(216, 216, 216, 0.55);
 }
+
