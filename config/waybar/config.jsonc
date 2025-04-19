@@ -1,6 +1,6 @@
-{
+[{
     "layer": "top",
-    "output": "HDMI-A-2",
+    "output": [ "HDMI-A-2" ],
     "reload_style_on_change": true,
     "modules-left": [
         "custom/rofi",
@@ -28,6 +28,7 @@
         "on-scroll-down": "hyprctl dispatch workspace e-1 > /dev/null",
         "persistent-workspaces": {
             "HDMI-A-2": [ 1, 2, 3, 4, 5, 6, 7],
+            //"DP-2": [ 8, 9, 10 ],
         },
     },
     "custom/media": {
@@ -112,17 +113,11 @@
         },
         "modules": [
             "custom/power",
-            //"custom/quit",
             "custom/lock",
             "custom/suspend",
             "custom/reboot"
         ]
     },
-//    "custom/quit": {
-//        "format": "󰗼",
-//        "tooltip": false,
-//        "on-click": "hyprctl dispatch exit"
-//    },
     "custom/lock": {
         "format": "󰍁",
         "tooltip": false,
@@ -143,4 +138,124 @@
         "tooltip": false,
         "on-click": "shutdown now"
     },
-}
+}, {
+    "layer": "top",
+    "output": [ "DP-2" ],
+    "reload_style_on_change": true,
+    "modules-left": [
+        "custom/rofi",
+        "hyprland/workspaces",
+    ],
+    "modules-center": [
+        "custom/media",
+    ],
+    "modules-right": [
+        "tray",
+        "wireplumber",
+        "network",
+        "hyprland/language",
+        "clock",
+        "group/power",
+    ],
+    "custom/rofi": {
+        "format": "",
+        "on-click": "pkill rofi || rofi -show drun -location 1",
+        "tooltip": false,
+    },
+    "hyprland/workspaces": {
+        "on-scroll-up": "hyprctl dispatch workspace e+1 > /dev/null",
+        "on-scroll-down": "hyprctl dispatch workspace e-1 > /dev/null",
+        "persistent-workspaces": {
+            "DP-2": [ 8, 9, 10, 11, 12 ],
+        },
+    },
+    "custom/media": {
+	"format": "{icon} {0}",
+		"return-type": "json",
+		"format-icons": {
+			"Playing": "",
+			"Paused": ""
+		},
+		"max-length": 50,
+		"exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+		"on-click": "playerctl play-pause",
+		"on-scroll-up": "playerctl next",
+		"on-scroll-down": "playerctl previous",
+		"tooltip": false
+	},
+    "tray": {
+        "spacing": 10,
+    },
+    "wireplumber": {
+        "scroll-step": 2,
+        "format": "{icon} {volume}%",
+        "format-muted": " ",
+        "format-icons": [""],
+        "on-click": "pkill pavucontrol || pavucontrol",
+        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+
+    },
+    "network": {
+        "format-wifi": " {signalStrength}%",
+        "format-disconnected": "⚠ Disconnected",
+        "tooltip-format-wifi": "{essid}",
+    },
+    "hyprland/language": {
+        "format-en": "EN",
+        "format-ru": "RU",
+        "format-uk": "UA",
+        "on-click": "hyprctl switchxkblayout obins-obins-annepro2 next > /dev/null",
+        "on-click-right": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null",
+        "on-scroll-up": "hyprctl switchxkblayout obins-obins-annepro2 next > /dev/null",
+        "on-scroll-down": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null",
+    },
+    "clock": {
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#dd3333'><b>{}</b></span>",
+            },
+        },
+        "actions": {
+            "on-click": "shift_reset",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        },
+    },
+    "group/power": {
+        "orientation": "inherit",
+        "drawer": {
+            "transition-duration": 400,
+            "children-class": "drawer-child",
+            "transition-left-to-right": false
+        },
+        "modules": [
+            "custom/power",
+            "custom/lock",
+            "custom/suspend",
+            "custom/reboot"
+        ]
+    },
+    "custom/lock": {
+        "format": "󰍁",
+        "tooltip": false,
+        "on-click": "hyprlock"
+    },
+    "custom/reboot": {
+        "format": "󰜉",
+        "tooltip": false,
+        "on-click": "reboot"
+    },
+    "custom/suspend": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "systemctl suspend"
+    },
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "shutdown now"
+    },
+}]
