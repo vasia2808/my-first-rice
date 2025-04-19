@@ -1,8 +1,9 @@
 {
     "layer": "top",
+    "output": "HDMI-A-2",
     "reload_style_on_change": true,
     "modules-left": [
-        "custom/wofi",
+        "custom/rofi",
         "hyprland/workspaces",
     ],
     "modules-center": [
@@ -17,16 +18,16 @@
         "clock",
         "group/power",
     ],
-    "custom/wofi": {
+    "custom/rofi": {
         "format": "",
-        "on-click": "pkill rofi || rofi -show drun",
+        "on-click": "pkill rofi || rofi -show drun -location 1",
         "tooltip": false,
     },
     "hyprland/workspaces": {
         "on-scroll-up": "hyprctl dispatch workspace e+1 > /dev/null",
         "on-scroll-down": "hyprctl dispatch workspace e-1 > /dev/null",
         "persistent-workspaces": {
-            "*": 7,
+            "HDMI-A-2": [ 1, 2, 3, 4, 5, 6, 7],
         },
     },
     "custom/media": {
@@ -55,12 +56,12 @@
         "format": "{icon} {percentage}%",
         "format-icons": ["\uDB80\uDCDE", "\uDB80\uDCDF", "\uDB80\uDCE0"],
         "return-type": "json",
-        "exec": "ddcutil getvcp 10 | grep -oP 'current.*?=\\s*\\K[0-9]+' | { read x; echo '{\"percentage\":'${x}'}'; }",
-        "on-scroll-up": "ddcutil setvcp 10 + 2",
-        "on-scroll-down": "ddcutil setvcp 10 - 2",
-        "on-click": "ddcutil setvcp 10 0",
-        "on-click-right": "ddcutil setvcp 10 100",
-        "on-click-middle": "ddcutil setvcp 10 50",
+        "exec": "ddcutil --bus 3 getvcp 10 | grep -oP 'current.*?=\\s*\\K[0-9]+' | { read x; echo '{\"percentage\":'${x}'}'; }",
+        "on-scroll-up": "ddcutil --bus 3 setvcp 10 + 2",
+        "on-scroll-down": "ddcutil --bus 3 setvcp 10 - 2",
+        "on-click": "ddcutil --bus 3 setvcp 10 0",
+        "on-click-right": "ddcutil --bus 3 setvcp 10 100",
+        "on-click-middle": "ddcutil --bus 3 setvcp 10 50",
         "interval": 1,
         "tooltip": false,
     },
