@@ -1,6 +1,6 @@
 PROMPT='%1~ %F{red}>%f '
 
-alias clear='FIRST_PROMPT=true; clear'
+alias clear='FIRST_PROMPT=true; clear && fastfetch'
 
 FIRST_PROMPT=true
 

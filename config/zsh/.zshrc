@@ -16,8 +16,9 @@ SAVEHIST=10000
 setopt HIST_IGNORE_ALL_DUPS
 
 export LS_COLORS='di=31'
-alias ls='ls --color=auto --group-directories-first'
 
+alias vim='nvim'
+alias ls='ls --color=auto --group-directories-first'
 alias grep='grep --color=auto'
 
 fastfetch
