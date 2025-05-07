@@ -1,6 +1,7 @@
 {
     "layer": "top",
     "output": [ "DP-2" ],
+    "fixed-center": false,
     "reload_style_on_change": true,
     "modules-left": [
         "custom/rofi",
