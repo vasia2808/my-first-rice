@@ -20,6 +20,6 @@ for app_name in `ls "$RICE_CONFIG_DIR"`
     ln -s "$rice" "$primary"
   done
 
-sudo pacman -Syu --needed alacritty fastfetch hypridle hyprland hyprlock hyprpaper mako neovim ranger rofi thunar waybar wofi zsh
+sudo pacman -Syu --needed alacritty fastfetch hypridle hyprland hyprlock hyprpaper mako neovim ranger rofi-wayland thunar waybar wofi zsh
 
 yay -Syu --needed qimgv
