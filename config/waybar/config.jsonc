@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "output": [ "DP-2" ],
+    "output": [ "DP-2", "eDP-1" ],
     "fixed-center": false,
     "reload_style_on_change": true,
     "modules-left": [
