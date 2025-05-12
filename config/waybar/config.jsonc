@@ -1,7 +1,6 @@
 {
     "layer": "top",
     "output": [ "DP-2", "eDP-1" ],
-    "fixed-center": false,
     "reload_style_on_change": true,
     "modules-left": [
         "custom/rofi",
@@ -13,7 +12,7 @@
     "modules-right": [
         "tray",
         "wireplumber",
-        "custom/brightness",
+        //"custom/brightness",
         "network",
         "hyprland/language",
         "clock",
@@ -28,7 +27,8 @@
         "on-scroll-up": "hyprctl dispatch workspace e+1 > /dev/null",
         "on-scroll-down": "hyprctl dispatch workspace e-1 > /dev/null",
         "persistent-workspaces": {
-            "DP-2": [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+            "DP-2": [ 1, 2, 3, 4, 5, 6, 7, 8 ],
+            "eDP-1": [ 1, 2, 3, 4, 5, 6, 7, 8 ]
         },
     },
     "custom/media": {
