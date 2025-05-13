@@ -12,6 +12,7 @@
     "modules-right": [
         "tray",
         "wireplumber",
+        "backlight",
         //"custom/brightness",
         "network",
         "hyprland/language",
@@ -27,8 +28,8 @@
         "on-scroll-up": "hyprctl dispatch workspace e+1 > /dev/null",
         "on-scroll-down": "hyprctl dispatch workspace e-1 > /dev/null",
         "persistent-workspaces": {
-            "DP-2": [ 1, 2, 3, 4, 5, 6, 7 ],
-            "eDP-1": [ 1, 2, 3, 4, 5, 6, 7 ]
+            "DP-2": [ 1, 2, 3, 4, 5, 6, 7, 8 ],
+            "eDP-1": [ 1, 2, 3, 4, 5, 6, 7, 8 ]
         },
     },
     "custom/media": {
@@ -48,11 +49,11 @@
     "tray": {
         "spacing": 10,
     },
-//    "backlight": {
-//        "device": "intel_backlight",
-//        "format": "{icon} {percent}%",
-//        "format-icons": [""]
-//    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": [""]
+    },
     "custom/brightness": {
         "format": "{icon} {percentage}%",
         "format-icons": ["\uDB80\uDCDE", "\uDB80\uDCDF", "\uDB80\uDCE0"],
