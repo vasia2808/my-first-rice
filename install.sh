@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RICE_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-RICE_CONFIG_DIR=$RICE_DIR/config
+RICE_CONFIG_DIR=$RICE_DIR/dotfiles/.config
 
 [ -d "$XDG_CONFIG_HOME" ] && CONFIG_DIR="$XDG_CONFIG_HOME" || CONFIG_DIR="~/.config"
 
@@ -22,4 +22,4 @@ for app_name in `ls "$RICE_CONFIG_DIR"`
 
 sudo pacman -Syu --needed alacritty fastfetch hypridle hyprland hyprlock hyprpaper mako neovim ranger rofi-wayland thunar waybar wofi zsh
 
-yay -Syu --needed qimgv
+paru -Syu --needed qimgv

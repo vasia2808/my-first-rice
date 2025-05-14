@@ -1,7 +1,7 @@
 #!/bin/bash
 
 RICE_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
-RICE_CONFIG_DIR=$RICE_DIR/config
+RICE_CONFIG_DIR=$RICE_DIR/dotfiles/.config
 
 [ -d "$XDG_CONFIG_HOME" ] && CONFIG_DIR="$XDG_CONFIG_HOME" || CONFIG_DIR="~/.config"
 
