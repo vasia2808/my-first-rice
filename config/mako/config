@@ -2,4 +2,6 @@ background-color=#191319eb
 font=JetBrainsMono 10
 text-color=#d8d8d8ff
 border-color=#621e1eff
+border-radius=3
 default-timeout=5000
+
