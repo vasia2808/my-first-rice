@@ -10,7 +10,7 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 
-HISTFILE=~/.zsh/.zhistory
+HISTFILE=~.zhistory
 HISTSIZE=10000
 SAVEHIST=10000
 setopt HIST_IGNORE_ALL_DUPS
