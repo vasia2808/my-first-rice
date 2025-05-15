@@ -1,6 +1,6 @@
-source $ZDOTDIR/prompt/prompt.zsh
+source ~/.zsh/prompt/prompt.zsh
 
-source $ZDOTDIR/zsh-history-substring-search/zsh-history-substring-search.zsh
+source ~/.zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 HISTORY_SUBSTRING_SEARCH_HIGHLIGHT_FOUND=(none)
@@ -10,7 +10,7 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 
-HISTFILE=$ZDOTDIR/.zhistory
+HISTFILE=~/.zsh/.zhistory
 HISTSIZE=10000
 SAVEHIST=10000
 setopt HIST_IGNORE_ALL_DUPS
