@@ -4,4 +4,5 @@ config/gtk-3.0/bookmarks
 config/zsh/.zhistory
 config/zsh/.zcompdump
 config/Thunar/accels.scm
+dotfiles/.config/qimgv/savedState.conf
 
