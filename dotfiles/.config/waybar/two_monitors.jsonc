@@ -1,6 +1,6 @@
 {
     "layer": "top",
-    "output": [ "DP-2", "eDP-1" ],
+    "output": [ "DP-2" ],
     "reload_style_on_change": true,
     "modules-left": [
         "custom/rofi",
@@ -29,7 +29,6 @@
         "on-scroll-down": "hyprctl dispatch workspace e-1 > /dev/null",
         "persistent-workspaces": {
             "DP-2": [ 1, 2, 3, 4, 5, 6, 7, 8 ],
-            "eDP-1": [ 1, 2, 3, 4, 5, 6, 7, 8 ]
         },
     },
     "custom/media": {
@@ -70,7 +69,7 @@
     "wireplumber": {
         "scroll-step": 1,
         "format": "{icon} {volume}%",
-        "format-muted": " ",
+        "format-muted": " {volume}%",
         "format-icons": [""],
         "on-click": "pkill pwvucontrol || pwvucontrol",
         "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
