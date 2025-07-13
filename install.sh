@@ -3,7 +3,12 @@
 RICE_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 RICE_CONFIG_DIR=$RICE_DIR/dotfiles/.config
 
-[ -d "$XDG_CONFIG_HOME" ] && CONFIG_DIR="$XDG_CONFIG_HOME" || CONFIG_DIR="~/.config"
+[ -d "$XDG_CONFIG_HOME" ] && CONFIG_DIR=$XDG_CONFIG_HOME || CONFIG_DIR=~/.config
+
+if [ ! -d "$CONFIG_DIR" ]; then
+    echo Creating config directory
+    mkdir "$CONFIG_DIR"
+fi
 
 for app_name in `ls "$RICE_CONFIG_DIR"`
   do
@@ -16,7 +21,10 @@ for app_name in `ls "$RICE_CONFIG_DIR"`
       continue
     fi
 
-    mv "$primary" "$backup"
+    if [ -d "$primary" ]; then
+        mv "$primary" "$backup"
+    fi
+
     ln -s "$rice" "$primary"
   done
 
