@@ -11,8 +11,6 @@
     "modules-right": [
         "tray",
         "wireplumber",
-        "backlight",
-        //"custom/brightness",
         "network",
         "hyprland/language",
         "clock",
@@ -46,24 +44,6 @@
 	},
     "tray": {
         "spacing": 10,
-    },
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon} {percent}%",
-        "format-icons": [""]
-    },
-    "custom/brightness": {
-        "format": "{icon} {percentage}%",
-        "format-icons": ["\uDB80\uDCDE", "\uDB80\uDCDF", "\uDB80\uDCE0"],
-        "return-type": "json",
-        "exec": "ddcutil --bus 3 getvcp 10 | grep -oP 'current.*?=\\s*\\K[0-9]+' | { read x; echo '{\"percentage\":'${x}'}'; }",
-        "on-scroll-up": "ddcutil --bus 3 setvcp 10 + 2",
-        "on-scroll-down": "ddcutil --bus 3 setvcp 10 - 2",
-        "on-click": "ddcutil --bus 3 setvcp 10 0",
-        "on-click-right": "ddcutil --bus 3 setvcp 10 100",
-        "on-click-middle": "ddcutil --bus 3 setvcp 10 50",
-        "interval": 1,
-        "tooltip": false,
     },
     "wireplumber": {
         "scroll-step": 1,
