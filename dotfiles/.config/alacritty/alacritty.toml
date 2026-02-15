@@ -3,7 +3,7 @@ padding = { x = 5, y = 5 }
 opacity = 0.92
 
 [font]
-normal = { family = "JetBrainsMono" }
+normal = { family = "JetBrainsMonoNerdFont" }
 size = 11
 
 [colors.primary]
