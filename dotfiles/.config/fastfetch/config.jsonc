@@ -16,15 +16,11 @@
   "modules": [
     "title",
     "separator",
-    "host",
     "uptime",
-    "de",
-    "wmtheme",
     "cpu",
     "gpu",
     "memory",
     "disk",
-    "poweradapter",
     "break"
   ]
 }
