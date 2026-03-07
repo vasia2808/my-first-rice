@@ -5,6 +5,8 @@ RICE_CONFIG_DIR=$RICE_DIR/dotfiles/.config
 
 [ -d "$XDG_CONFIG_HOME" ] && CONFIG_DIR=$XDG_CONFIG_HOME || CONFIG_DIR=~/.config
 
+sudo pacman -Syu --needed alacritty fastfetch ffmpegthumbnailer gvfs-mtp hypridle hyprland hyprlock hyprpaper hyprpolkitagent mako neovim otf-font-awesome playerctl pwvucontrol qimgv ranger rofi-wayland thunar tumbler ttf-nerd-fonts-symbols waybar wl-clipboard wl-clip-persist xdg-desktop-portal-hyprland zsh
+
 if [ ! -d "$CONFIG_DIR" ]; then
     echo Creating config directory
     mkdir "$CONFIG_DIR"
@@ -28,6 +30,17 @@ for app_name in `ls "$RICE_CONFIG_DIR"`
     ln -s "$rice" "$primary"
   done
 
-sudo pacman -Syu --needed alacritty fastfetch hypridle hyprland hyprlock hyprpaper mako neovim ranger rofi-wayland thunar waybar wofi zsh
+ln -s "$RICE_DIR/dotfiles/.zsh" "$HOME/.zsh"
+ln -s "$RICE_DIR/dotfiles/.zprofile" "$HOME/.zprofile"
+ln -s "$RICE_DIR/dotfiles/.zshenv" "$HOME/.zshenv"
+ln -s "$RICE_DIR/dotfiles/.zshrc" "$HOME/.zshrc"
 
-paru -Syu --needed qimgv
+chsh -s /usr/bin/zsh
+
+sudo ln -s /usr/bin/alacritty /usr/bin/konsole
+
+sudo cp -r getty@tty1.service.d /etc/systemd/system
+
+gsettings set org.gnome.desktop.interface font-name 'JetBrainsMonoNerdFont 11'
+gsettings set org.gnome.desktop.wm.preferences button-layout ':'
+
