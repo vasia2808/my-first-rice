@@ -15,7 +15,7 @@ window#waybar > box {
 
 tooltip {
     background-color: rgba(25, 19, 25, 0.92);
-    border-radius: 0px;
+    border-radius: 3px;
     border: none;
 }
 
