@@ -19,6 +19,10 @@ tooltip {
     border: none;
 }
 
+tooltip label {
+    color: #d8d8d8;
+}
+
 .module {
     margin-left: 5px;
     margin-right: 5px;
