@@ -7,7 +7,7 @@
     alternate-urgent-background: var(lightbg);
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     background-color:            transparent;
-    border-color:                var(foreground);
+    border-color:                rgba ( 98, 30, 30, 100 % );
     normal-background:           transparent;
     selected-urgent-background:  var(red);
     alternate-active-background: var(lightbg);
@@ -86,7 +86,7 @@ window {
     padding:          5;
     background-color: var(background);
     border:           2;
-    border-color:     rgba ( 98, 30, 30, 0.92 );
+    border-color:     var(border-color);
     border-radius: 5px;
     width: 500px;
     height: 300px;
