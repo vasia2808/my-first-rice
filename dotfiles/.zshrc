@@ -21,4 +21,8 @@ alias vim='nvim'
 alias ls='ls --color=auto --group-directories-first'
 alias grep='grep --color=auto'
 
+bindkey '^H' backward-kill-word
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
+
 fastfetch
