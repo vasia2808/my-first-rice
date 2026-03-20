@@ -3,33 +3,38 @@
     "reload_style_on_change": true,
     "modules-left": [
         "custom/rofi",
-        "hyprland/workspaces",
+        "hyprland/workspaces"
     ],
     "modules-center": [
-        "custom/media",
+        "custom/media"
     ],
     "modules-right": [
         "tray",
+        "custom/separator",
         "wireplumber",
+        "custom/separator",
         "network",
+        "custom/separator",
         "hyprland/language",
+        "custom/separator",
         "clock",
-        "group/power",
+        "custom/separator",
+        "group/power"
     ],
     "custom/rofi": {
         "format": "",
         "on-click": "pkill rofi || rofi -show drun -location 1",
-        "tooltip": false,
+        "tooltip": false
     },
     "hyprland/workspaces": {
         "on-scroll-up": "hyprctl dispatch workspace e+1 > /dev/null",
         "on-scroll-down": "hyprctl dispatch workspace e-1 > /dev/null",
         "persistent-workspaces": {
-            "*": 8,
-        },
+            "*": 9
+        }
     },
     "custom/media": {
-	"format": "{icon} {0}",
+	    "format": "{icon} {0}",
 		"return-type": "json",
 		"format-icons": {
 			"Playing": "",
@@ -43,7 +48,7 @@
 		"tooltip": false
 	},
     "tray": {
-        "spacing": 10,
+        "spacing": 10
     },
     "wireplumber": {
         "scroll-step": 1,
@@ -51,13 +56,17 @@
         "format-muted": " {volume}%",
         "format-icons": [""],
         "on-click": "pkill pwvucontrol || pwvucontrol",
-        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+        "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 
+    },
+    "custom/separator": {
+        "format": "|",
+        "tooltip": false
     },
     "network": {
         "format-wifi": " {signalStrength}%",
         "format-disconnected": "⚠ Disconnected",
-        "tooltip-format-wifi": "{essid}",
+        "tooltip-format-wifi": "{essid}"
     },
     "hyprland/language": {
         "format-en": "EN",
@@ -66,7 +75,7 @@
         "on-click": "hyprctl switchxkblayout obins-obins-annepro2 next > /dev/null",
         "on-click-right": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null",
         "on-scroll-up": "hyprctl switchxkblayout obins-obins-annepro2 next > /dev/null",
-        "on-scroll-down": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null",
+        "on-scroll-down": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null"
     },
     "clock": {
         "locale": "en_GB.UTF-8",
@@ -75,14 +84,14 @@
             "format": {
                 "months": "<span color='#ffead3'><b>{}</b></span>",
                 "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-                "today": "<span color='#dd3333'><b>{}</b></span>",
-            },
+                "today": "<span color='#dd3333'><b>{}</b></span>"
+            }
         },
         "actions": {
             "on-click": "shift_reset",
             "on-scroll-up": "shift_up",
             "on-scroll-down": "shift_down"
-        },
+        }
     },
     "group/power": {
         "orientation": "inherit",
@@ -117,5 +126,6 @@
         "format": "",
         "tooltip": false,
         "on-click": "shutdown now"
-    },
+    }
 }
+

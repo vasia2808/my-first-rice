@@ -1,5 +1,5 @@
 * {
-    font-family: "JetBrainsMono Nerd Font";
+    font-family: "JetBrainsMono Nerd Font Propo";
     font-size: 15px;
 }
 
@@ -9,8 +9,8 @@ window#waybar {
 }
 
 window#waybar > box {
-    padding-left: 6px;
-    padding-right: 10px;
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 tooltip {
