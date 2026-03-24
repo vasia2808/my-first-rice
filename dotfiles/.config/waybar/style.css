@@ -50,3 +50,7 @@ tooltip label {
     color: rgba(216, 216, 216, 0.55);
 }
 
+#custom-separator {
+    color: rgba(216, 216, 216, 0.7);
+}
+
