@@ -42,4 +42,5 @@ sudo ln -s /usr/bin/alacritty /usr/bin/konsole
 sudo cp -r getty@tty1.service.d /etc/systemd/system
 
 gsettings set org.gnome.desktop.wm.preferences button-layout ':'
+gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 11'
 
