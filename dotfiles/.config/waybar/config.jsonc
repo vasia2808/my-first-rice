@@ -55,7 +55,7 @@
         "format": "{icon} {volume}%",
         "format-muted": " {volume}%",
         "format-icons": [""],
-        "on-click": "pkill pwvucontrol || pwvucontrol",
+        "on-click": "pkill pavucontrol || pavucontrol",
         "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 
     },
