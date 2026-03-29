@@ -5,7 +5,7 @@ RICE_CONFIG_DIR=$RICE_DIR/dotfiles/.config
 
 [ -d "$XDG_CONFIG_HOME" ] && CONFIG_DIR=$XDG_CONFIG_HOME || CONFIG_DIR=$HOME/.config
 
-sudo pacman -Syu --needed --noconfirm alacritty fastfetch firefox ffmpegthumbnailer gvfs-mtp grim hypridle hyprland hyprlock hyprpaper hyprpolkitagent mako neovim otf-font-awesome paru pipewire-jack pipewire-pulse playerctl pwvucontrol qimgv ranger rofi-wayland thunar tumbler ttf-jetbrains-mono-nerd waybar wl-clipboard wl-clip-persist xdg-desktop-portal-hyprland zsh
+sudo pacman -Syu --needed --noconfirm alacritty fastfetch firefox ffmpegthumbnailer gvfs-mtp grim hypridle hyprland hyprlock hyprpaper hyprpolkitagent mako neovim noto-fonts-cjk otf-font-awesome paru pipewire-jack pipewire-pulse playerctl pwvucontrol qimgv ranger rofi-wayland thunar tumbler ttf-jetbrains-mono-nerd waybar wl-clipboard wl-clip-persist xdg-desktop-portal-hyprland zsh
 
 if [ ! -d "$CONFIG_DIR" ]; then
     echo Creating config directory
