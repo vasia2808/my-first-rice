@@ -52,14 +52,15 @@ fi
 
 ln -s "$RICE_DIR/GTK/Material-Black-Cherry-BE-Custom" "$HOME/.local/share/themes/Material-Black-Cherry-BE-Custom"
 ln -s "$RICE_DIR/GTK/Material-Black-Cherry-Numix-Custom" "$HOME/.local/share/icons/Material-Black-Cherry-Numix-Custom"
+ln -s "$RICE_DIR/GTK/volantes_light_cursors" "$HOME/.local/share/icons/volantes_light_cursors"
+ln -s "$RICE_DIR/GTK/default" "$HOME/.local/share/icons/default"
 
 gsettings set org.gnome.desktop.interface gtk-theme 'Material-Black-Cherry-BE-Custom'
 gsettings set org.gnome.desktop.interface icon-theme 'Material-Black-Cherry-Numix-Custom'
+gsettings set org.gnome.desktop.wm.preferences button-layout ':'
+gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 11'
 
 sudo ln -s /usr/bin/alacritty /usr/bin/konsole
 
 sudo cp -r getty@tty1.service.d /etc/systemd/system
-
-gsettings set org.gnome.desktop.wm.preferences button-layout ':'
-gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 11'
 
