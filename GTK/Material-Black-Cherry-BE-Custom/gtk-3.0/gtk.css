@@ -94,7 +94,7 @@ radio:active, row.activatable:active {
   background-color: rgba(45, 38, 44, 1);
 }
 .view:selected:hover {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 .view:disabled {
   color: rgba(163, 163, 163, 0.5);
@@ -103,7 +103,7 @@ radio:active, row.activatable:active {
   border-radius: 2px;
 }
 .view selection, .view:selected {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 
 textview text {
@@ -342,7 +342,7 @@ entry image.right {
 }
 spinbutton:not(.vertical) selection,
 entry selection {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 spinbutton.error:not(.vertical),
 entry.error {
@@ -2815,13 +2815,13 @@ row.activatable.has-open-popup {
   background-color: rgba(163, 163, 163, 0.12);
 }
 row:selected {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 row:selected:drop(active), row:selected:hover {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 row:selected:focus {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 row:selected:active {
   background-image: radial-gradient(circle, rgba(183, 56, 56, 0.16) 10%, transparent 0%);
@@ -6188,7 +6188,7 @@ text widgets and the like base background color */
 @define-color theme_base_color #1a1c1e;
 /*
 base background color of selections */
-@define-color theme_selected_bg_color #7c2626;
+@define-color theme_selected_bg_color #942d2b;
 /*
 text/foreground color of selections */
 @define-color theme_selected_fg_color #d8d8d8;
@@ -6215,7 +6215,7 @@ text widgets and the like base background color on backdrop windows */
 @define-color theme_unfocused_base_color #1a1c1e;
 /*
 base background color of selections on backdrop windows */
-@define-color theme_unfocused_selected_bg_color #7c2626;
+@define-color theme_unfocused_selected_bg_color #942d2b;
 /*
 text/foreground color of selections on backdrop windows */
 @define-color theme_unfocused_selected_fg_color #fff;

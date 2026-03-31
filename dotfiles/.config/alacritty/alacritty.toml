@@ -9,6 +9,9 @@ size = 11
 [colors.primary]
 background = "#191319"
 
+[colors.normal]
+red = "#b54541"
+
 [colors]
 transparent_background_colors = true
 

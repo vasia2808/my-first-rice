@@ -7,7 +7,7 @@
     alternate-urgent-background: var(lightbg);
     lightbg:                     rgba ( 238, 232, 213, 100 % );
     background-color:            transparent;
-    border-color:                rgba ( 98, 30, 30, 100 % );
+    border-color:                rgba ( 140, 45, 42, 100 % );
     normal-background:           transparent;
     selected-urgent-background:  var(red);
     alternate-active-background: var(lightbg);

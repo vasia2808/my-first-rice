@@ -68,17 +68,17 @@ image:disabled {
   color: rgba(163, 163, 163, 0.5);
 }
 .view:selected {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 .view > .cell:selected:hover {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 
 textview {
   caret-color: #d8d8d8;
 }
 textview > text > selection {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 textview > border {
   color: rgba(163, 163, 163, 0.7);
@@ -340,7 +340,7 @@ entry > text > placeholder {
 }
 spinbutton:not(.vertical) > text > selection,
 entry > text > selection {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 spinbutton:not(.vertical) > text > block-cursor,
 entry > text > block-cursor {
@@ -2617,13 +2617,13 @@ row.activatable.has-open-popup {
   background-color: rgba(163, 163, 163, 0.12);
 }
 row:selected {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 row:selected:drop(active), row:selected:hover {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 row:selected:focus {
-  background-color: #7c2626;
+  background-color: #942d2b;
 }
 row:selected:active {
   background-image: radial-gradient(circle, rgba(183, 56, 56, 0.16) 10%, transparent 10%);
