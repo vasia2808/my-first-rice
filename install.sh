@@ -8,7 +8,7 @@ RICE_CONFIG_DIR=$RICE_DIR/dotfiles/.config
 THEMES_DIR=$HOME/.local/share/themes
 ICONS_DIR=$HOME/.local/share/icons
 
-sudo pacman -Syu --needed --noconfirm alacritty engrampa fastfetch firefox ffmpegthumbnailer gvfs-mtp grim hypridle hyprland hyprlock hyprpaper mako neovim noto-fonts-cjk otf-font-awesome pavucontrol paru pipewire-jack pipewire-pulse playerctl polkit-gnome qimgv ranger rofi-wayland thunar thunar-archive-plugin tumbler ttf-jetbrains-mono-nerd waybar wl-clipboard wl-clip-persist xdg-desktop-portal-hyprland zsh
+sudo pacman -Syu --needed --noconfirm alacritty engrampa fastfetch firefox ffmpegthumbnailer gvfs-mtp grim hypridle hyprland hyprlock hyprpaper mako mpv mpv-mpris neovim noto-fonts-cjk otf-font-awesome pavucontrol paru pipewire-jack pipewire-pulse playerctl polkit-gnome qimgv ranger rofi-wayland thunar thunar-archive-plugin tumbler ttf-jetbrains-mono-nerd waybar wl-clipboard wl-clip-persist xdg-desktop-portal-hyprland zsh
 
 if [ ! -d "$CONFIG_DIR" ]; then
     echo Creating config directory
