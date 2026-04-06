@@ -3,5 +3,7 @@ export XDG_DATA_HOME=$HOME/.local/share
 export XDG_CACHE_HOME=$HOME/.cache
 
 export PATH=$HOME/.local/bin:$PATH
+typeset -U PATH
+
 export EDITOR=nvim
 
