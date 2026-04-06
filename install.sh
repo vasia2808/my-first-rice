@@ -6,10 +6,9 @@ CONFIG_DIR=${XDG_CONFIG_HOME:-$HOME/.config}
 THEMES_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/themes
 ICONS_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/icons
 
-sudo pacman -Syu --needed --noconfirm alacritty engrampa fastfetch firefox ffmpegthumbnailer gvfs-mtp grim hypridle hyprland hyprlock hyprpaper mako mpv mpv-mpris neovim noto-fonts-cjk otf-font-awesome pavucontrol paru pipewire-jack pipewire-pulse playerctl polkit-gnome qimgv rofi-wayland thunar thunar-archive-plugin tumbler ttf-jetbrains-mono-nerd waybar wl-clipboard wl-clip-persist xdg-desktop-portal-hyprland zsh
+sudo pacman -Syu --needed --noconfirm alacritty engrampa fastfetch firefox ffmpegthumbnailer gvfs-mtp grim hypridle hyprland hyprlock hyprpaper mako mpd mpd-mpris mpv mpv-mpris neovim noto-fonts-cjk otf-font-awesome pavucontrol paru pipewire-jack pipewire-pulse playerctl polkit-gnome qimgv rmpc rofi-wayland thunar thunar-archive-plugin tumbler ttf-jetbrains-mono-nerd waybar wl-clipboard wl-clip-persist xdg-desktop-portal-hyprland zsh
 
 if [ ! -d "$CONFIG_DIR" ]; then
-    echo Creating config directory
     mkdir "$CONFIG_DIR"
 fi
 
@@ -39,12 +38,10 @@ ln -s "$RICE_DIR/dotfiles/.zshrc" "$HOME/.zshrc"
 chsh -s /usr/bin/zsh
 
 if [ ! -d "$THEMES_DIR" ]; then
-    echo Creating themes directory
     mkdir -p "$THEMES_DIR"
 fi
 
 if [ ! -d "$ICONS_DIR" ]; then
-    echo Creating icons directory
     mkdir -p "$ICONS_DIR"
 fi
 
@@ -57,6 +54,12 @@ gsettings set org.gnome.desktop.interface gtk-theme 'Material-Black-Cherry-BE-Cu
 gsettings set org.gnome.desktop.interface icon-theme 'Material-Black-Cherry-Numix-Custom'
 gsettings set org.gnome.desktop.wm.preferences button-layout ':'
 gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 11'
+
+mkdir -p "$HOME/.local/share/mpd/playlists"
+mkdir -p "$HOME/.local/state/mpd"
+
+systemctl --user enable mpd
+systemctl --user enable mpd-mpris
 
 sudo ln -s /usr/bin/alacritty /usr/bin/konsole
 
