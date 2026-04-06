@@ -2,11 +2,9 @@
 
 RICE_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 RICE_CONFIG_DIR=$RICE_DIR/dotfiles/.config
-
-[ -d "$XDG_CONFIG_HOME" ] && CONFIG_DIR=$XDG_CONFIG_HOME || CONFIG_DIR=$HOME/.config
-
-THEMES_DIR=$HOME/.local/share/themes
-ICONS_DIR=$HOME/.local/share/icons
+CONFIG_DIR=${XDG_CONFIG_HOME:-$HOME/.config}
+THEMES_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/themes
+ICONS_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/icons
 
 sudo pacman -Syu --needed --noconfirm alacritty engrampa fastfetch firefox ffmpegthumbnailer gvfs-mtp grim hypridle hyprland hyprlock hyprpaper mako mpv mpv-mpris neovim noto-fonts-cjk otf-font-awesome pavucontrol paru pipewire-jack pipewire-pulse playerctl polkit-gnome qimgv ranger rofi-wayland thunar thunar-archive-plugin tumbler ttf-jetbrains-mono-nerd waybar wl-clipboard wl-clip-persist xdg-desktop-portal-hyprland zsh
 
@@ -50,10 +48,10 @@ if [ ! -d "$ICONS_DIR" ]; then
     mkdir -p "$ICONS_DIR"
 fi
 
-ln -s "$RICE_DIR/GTK/Material-Black-Cherry-BE-Custom" "$HOME/.local/share/themes/Material-Black-Cherry-BE-Custom"
-ln -s "$RICE_DIR/GTK/Material-Black-Cherry-Numix-Custom" "$HOME/.local/share/icons/Material-Black-Cherry-Numix-Custom"
-ln -s "$RICE_DIR/GTK/volantes_light_cursors" "$HOME/.local/share/icons/volantes_light_cursors"
-ln -s "$RICE_DIR/GTK/default" "$HOME/.local/share/icons/default"
+ln -s "$RICE_DIR/GTK/Material-Black-Cherry-BE-Custom" "$THEMES_DIR/Material-Black-Cherry-BE-Custom"
+ln -s "$RICE_DIR/GTK/Material-Black-Cherry-Numix-Custom" "$ICONS_DIR/Material-Black-Cherry-Numix-Custom"
+ln -s "$RICE_DIR/GTK/volantes_light_cursors" "$ICONS_DIR/volantes_light_cursors"
+ln -s "$RICE_DIR/GTK/default" "$ICONS_DIR/default"
 
 gsettings set org.gnome.desktop.interface gtk-theme 'Material-Black-Cherry-BE-Custom'
 gsettings set org.gnome.desktop.interface icon-theme 'Material-Black-Cherry-Numix-Custom'
