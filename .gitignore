@@ -1,9 +1,7 @@
 __pycache__/
+*.lock
 dotfiles/.config/qimgv/savedState.conf
-dotfiles/.config/gtk-3.0/bookmarks
-dotfiles/.config/zsh/.zhistory
-dotfiles/.config/zsh/.zcompdump
-dotfiles/.config/qimgv/savedState.conf
-dotfiles/.config/gtk-3.0/bookmarks
 dotfiles/.config/Thunar/accels.scm
+dotfiles/.config/qBittorrent/lockfile
+dotfiles/.config/qBittorrent/qBittorrent-data.conf
 
