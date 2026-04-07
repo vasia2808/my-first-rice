@@ -6,7 +6,7 @@ CONFIG_DIR=${XDG_CONFIG_HOME:-$HOME/.config}
 THEMES_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/themes
 ICONS_DIR=${XDG_DATA_HOME:-$HOME/.local/share}/icons
 
-sudo pacman -Syu --needed --noconfirm alacritty engrampa fastfetch firefox ffmpeg-audio-thumbnailer ffmpegthumbnailer gvfs-mtp grim hypridle hyprland hyprlock hyprpaper mako mpd mpd-mpris mpv mpv-mpris neovim noto-fonts-cjk otf-font-awesome pavucontrol paru pipewire-jack pipewire-pulse playerctl polkit-gnome qbittorrent qimgv rmpc rofi-wayland telegram-desktop thunar thunar-archive-plugin tumbler ttf-jetbrains-mono-nerd waybar wl-clipboard wl-clip-persist xdg-desktop-portal-hyprland zsh
+sudo pacman -Syu --needed --noconfirm alacritty engrampa fastfetch firefox ffmpeg-audio-thumbnailer ffmpegthumbnailer gvfs-mtp grim hypridle hyprland hyprlock hyprpaper kid3-qt mako mpd mpd-mpris mpv mpv-mpris neovim noto-fonts-cjk otf-font-awesome pavucontrol paru pipewire-jack pipewire-pulse playerctl polkit-gnome qbittorrent qimgv rmpc rofi-wayland telegram-desktop thunar thunar-archive-plugin tumbler ttf-jetbrains-mono-nerd waybar wl-clipboard wl-clip-persist xdg-desktop-portal-hyprland zsh
 
 if [ ! -d "$CONFIG_DIR" ]; then
     mkdir "$CONFIG_DIR"
