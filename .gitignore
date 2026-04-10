@@ -4,4 +4,5 @@ dotfiles/.config/qimgv/savedState.conf
 dotfiles/.config/Thunar/accels.scm
 dotfiles/.config/qBittorrent/lockfile
 dotfiles/.config/qBittorrent/qBittorrent-data.conf
+dotfiles/.config/nvim/nvim-pack-lock.json
 
