@@ -37,7 +37,7 @@ local colors = {
   color4   = '#cccccc',
   color5   = '#453d43',
   color13  = '#a5c261',
-  color10  = '#6c99bb',
+  color10  = '#71a7d1',
   color8   = '#f9a959',
   color9   = '#b4b7b4',
 }
