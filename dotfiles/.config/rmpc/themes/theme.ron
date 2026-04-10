@@ -208,7 +208,7 @@
                             oneshot_label: " ",
                             on_style: (fg: "red", modifiers: "Bold"),
                             off_style: (fg: "gray", modifiers: "Dim"),
-                            oneshot_style: (fg: "yellow", modifiers: "Dim"),
+                            oneshot_style: (fg: "yellow"),
                         )))),
                         (kind: Property(Status(SingleV2(
                             on_label: " ",
