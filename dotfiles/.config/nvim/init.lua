@@ -1,6 +1,8 @@
 vim.pack.add({
     'https://github.com/RRethy/base16-nvim',
-    'https://github.com/nvim-lualine/lualine.nvim'
+    'https://github.com/nvim-lualine/lualine.nvim',
+    'https://github.com/nvimdev/dashboard-nvim',
+    'https://github.com/nvim-tree/nvim-web-devicons'
 })
 
 vim.cmd.colorscheme('base16-espresso')
@@ -29,6 +31,7 @@ override_bg('CursorLineNr', '#2d262c')
 override_fg('LineNr', '#777777')
 
 local colors = {
+  color1   = '#db6565',
   color2   = '#3a3339',
   color3   = '#d197d9',
   color4   = '#cccccc',
@@ -57,13 +60,16 @@ require('lualine').setup {
       },
       normal = {
         c = { fg = colors.color9, bg = colors.color2 },
-        a = { fg = colors.color2, bg = colors.color10, gui = 'bold' },
+        a = { fg = colors.color2, bg = colors.color1, gui = 'bold' },
         b = { fg = colors.color4, bg = colors.color5 },
       },
       insert = {
         a = { fg = colors.color2, bg = colors.color13, gui = 'bold' },
         b = { fg = colors.color4, bg = colors.color5 },
-      }
+      },
+      command = {
+        a = { fg = colors.color2, bg = colors.color10, gui = 'bold' },
+      },
     },
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''}
@@ -78,6 +84,31 @@ require('lualine').setup {
   }
 }
 
+require('dashboard').setup {
+  config = {
+    header = {
+      ' ███╗   ██╗ ███████╗ ██████╗  ██╗   ██╗ ██╗ ███╗   ███╗',
+      ' ████╗  ██║ ██╔════╝██╔═══██╗ ██║   ██║ ██║ ████╗ ████║',
+      ' ██╔██╗ ██║ █████╗  ██║   ██║ ██║   ██║ ██║ ██╔████╔██║',
+      ' ██║╚██╗██║ ██╔══╝  ██║   ██║ ╚██╗ ██╔╝ ██║ ██║╚██╔╝██║',
+      ' ██║ ╚████║ ███████╗╚██████╔╝  ╚████╔╝  ██║ ██║ ╚═╝ ██║',
+      ' ╚═╝  ╚═══╝ ╚══════╝ ╚═════╝    ╚═══╝   ╚═╝ ╚═╝     ╚═╝',
+      '                                                       ',
+    },
+    shortcut = {},
+    packages = { enable = false },
+    project = { enable = false },
+    mru = { enable = true, },
+    footer = {},
+  }
+}
+
+vim.opt.showmode = false
+vim.opt.ruler = false
+
+vim.opt.guicursor = 'n-v-o-r-cr:block-blinkoff600-blinkon600,i-c-ci-ve:ver20-blinkoff600-blinkon600'
+vim.opt.cursorline = true
+
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
@@ -85,9 +116,7 @@ vim.opt.expandtab = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.cursorline = true
-vim.opt.showmode = false
 vim.opt.fillchars:append { eob = ' ' }
 
-vim.opt.guicursor = 'n-v-o-r-cr:block-blinkoff600-blinkon600,i-c-ci-ve:ver20-blinkoff600-blinkon600'
+vim.g.mapleader = " "
 
