@@ -36,11 +36,19 @@ local colors = {
   color3   = '#d197d9',
   color4   = '#cccccc',
   color5   = '#453d43',
-  color13  = '#a5c261',
-  color10  = '#71a7d1',
   color8   = '#f9a959',
   color9   = '#b4b7b4',
+  color10  = '#71a7d1',
+  color13  = '#a5c261',
 }
+
+local function mode_color()
+  local mode = vim.fn.mode(1)
+  if mode == 'no' or mode == 'nov' or mode == 'noV' or mode == 'no\22' then
+    return { fg = colors.color2, bg = colors.color8, gui = 'bold' }
+  end
+  return nil
+end
 
 require('lualine').setup {
   options = {
@@ -75,12 +83,22 @@ require('lualine').setup {
     section_separators = { left = '', right = ''}
   },
   sections = {
-    lualine_a = {'mode'},
+    lualine_a = {
+      {
+        'mode',
+        color = mode_color,
+      }
+    },
     lualine_b = {},
     lualine_c = {'filename'},
     lualine_x = {},
     lualine_y = {'progress'},
-    lualine_z = {'location'}
+    lualine_z = {
+      {
+        'location',
+        color = mode_color,
+      }
+    }
   }
 }
 
