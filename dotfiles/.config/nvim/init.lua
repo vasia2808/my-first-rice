@@ -90,7 +90,18 @@ require('lualine').setup {
       }
     },
     lualine_b = {},
-    lualine_c = {'filename'},
+    lualine_c = {
+      {
+        'filename',
+        newfile_status = true,
+        symbols = {
+          modified = ' ',
+          readonly = '󰌾 ',
+          unnamed = ' ',
+          newfile = ' '
+        }
+      }
+    },
     lualine_x = {},
     lualine_y = {'progress'},
     lualine_z = {
