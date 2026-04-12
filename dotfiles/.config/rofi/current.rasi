@@ -1,7 +1,7 @@
 * {
     red:                         rgba ( 220, 50, 47, 100 % );
     selected-active-foreground:  var(background);
-    lightfg:                     rgba ( 69, 61, 67, 0.8 );
+    lightfg:                     rgba ( 79, 68, 77, 0.8 );
     separatorcolor:              var(foreground);
     urgent-foreground:           var(red);
     alternate-urgent-background: var(lightbg);
