@@ -25,8 +25,8 @@ override_bg('Normal', '#191319')
 override_bg('NormalFloat', '#191319')
 override_bg('EndOfBuffer', '#191319')
 override_bg('LineNr', '#191319')
-override_bg('CursorLine', '#30282f')
-override_bg('CursorLineNr', '#30282f')
+override_bg('CursorLine', '#2d262c')
+override_bg('CursorLineNr', '#2d262c')
 
 override_fg('LineNr', '#777777')
 
