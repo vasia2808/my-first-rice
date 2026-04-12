@@ -32,10 +32,10 @@ override_fg('LineNr', '#777777')
 
 local colors = {
   color1   = '#db6565',
-  color2   = '#3a3339',
+  color2   = '#3b3139',
   color3   = '#d197d9',
   color4   = '#cccccc',
-  color5   = '#453d43',
+  color5   = '#4f444d',
   color8   = '#f9a959',
   color9   = '#b4b7b4',
   color10  = '#71a7d1',
