@@ -27,6 +27,7 @@ override_bg('EndOfBuffer', '#191319')
 override_bg('LineNr', '#191319')
 override_bg('CursorLine', '#2d262c')
 override_bg('CursorLineNr', '#2d262c')
+override_bg('StatusLine', '#3b3139')
 
 override_fg('LineNr', '#777777')
 
