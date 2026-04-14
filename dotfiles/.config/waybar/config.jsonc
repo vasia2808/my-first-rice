@@ -6,7 +6,7 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "custom/media"
+        "mpris"
     ],
     "modules-right": [
         "tray",
@@ -33,20 +33,20 @@
             "*": 9
         }
     },
-    "custom/media": {
-	    "format": "{icon} {0}",
-		"return-type": "json",
-		"format-icons": {
-			"Playing": "",
-			"Paused": "",
-            "Stopped": ""
+    "mpris": {
+        "format": "{status_icon} {title}",
+		"status-icons": {
+			"playing": "",
+			"paused": ""
 		},
 		"max-length": 60,
-		"exec": "playerctl metadata --format '{\"text\": \"{{markup_escape(title)}}\", \"tooltip\": \"{{markup_escape(artist)}} - {{markup_escape(album)}}\", \"alt\": \"{{status}}\"}' -F",
-		"on-click": "playerctl play-pause",
 		"on-scroll-up": "playerctl next",
-		"on-scroll-down": "playerctl previous"
-	},
+		"on-scroll-down": "playerctl previous",
+        "on-click-middle": "",
+        "on-click-right": "",
+        "tooltip-format": "{dynamic}",
+        "dynamic-order": ["artist", "album"]
+    },
     "tray": {
         "spacing": 10
     },
