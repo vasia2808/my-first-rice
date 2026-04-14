@@ -28,7 +28,7 @@ override_bg('LineNr', '#191319')
 override_bg('CursorLine', '#2d262c')
 override_bg('CursorLineNr', '#2d262c')
 override_bg('StatusLine', '#3b3139')
-override_bg('Visual', '#4a3d47')
+override_bg('Visual', '#51434e')
 override_bg('Pmenu', '#1e181e')
 override_bg('PmenuSel', '#2d262c')
 
