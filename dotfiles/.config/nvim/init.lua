@@ -31,6 +31,7 @@ override_bg('StatusLine', '#3b3139')
 override_bg('Visual', '#51434e')
 override_bg('Pmenu', '#1e181e')
 override_bg('PmenuSel', '#2d262c')
+override_bg('Error', '#3b3139')
 
 override_fg('LineNr', '#777777')
 override_fg('PmenuSel', '#cccccc')
