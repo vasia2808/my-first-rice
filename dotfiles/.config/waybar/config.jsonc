@@ -27,8 +27,8 @@
         "tooltip": false
     },
     "hyprland/workspaces": {
-        "on-scroll-up": "hyprctl dispatch workspace e+1 > /dev/null",
-        "on-scroll-down": "hyprctl dispatch workspace e-1 > /dev/null",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
         "persistent-workspaces": {
             "*": 9
         }
@@ -74,12 +74,12 @@
         "format-en": "EN",
         "format-ru": "RU",
         "format-uk": "UA",
-        "on-click": "hyprctl switchxkblayout obins-obins-annepro2 next > /dev/null",
-        "on-click-right": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null",
-        "on-scroll-up": "hyprctl switchxkblayout obins-obins-annepro2 next > /dev/null",
-        "on-scroll-down": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null",
-        "on-click-forward": "hyprctl switchxkblayout obins-obins-annepro2 next > /dev/null",
-        "on-click-backward": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null"
+        "on-click": "hyprctl switchxkblayout obins-obins-annepro2 next",
+        "on-click-right": "hyprctl switchxkblayout obins-obins-annepro2 prev",
+        "on-scroll-up": "hyprctl switchxkblayout obins-obins-annepro2 next",
+        "on-scroll-down": "hyprctl switchxkblayout obins-obins-annepro2 prev",
+        "on-click-forward": "hyprctl switchxkblayout obins-obins-annepro2 next",
+        "on-click-backward": "hyprctl switchxkblayout obins-obins-annepro2 prev"
     },
     "clock": {
         "locale": "en_GB.UTF-8",
@@ -113,25 +113,25 @@
             "custom/reboot"
         ]
     },
+    "custom/power": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "shutdown now"
+    },
     "custom/lock": {
         "format": "󰍁",
         "tooltip": false,
         "on-click": "hyprlock"
-    },
-    "custom/reboot": {
-        "format": "󰜉",
-        "tooltip": false,
-        "on-click": "reboot"
     },
     "custom/suspend": {
         "format": "",
         "tooltip": false,
         "on-click": "systemctl suspend"
     },
-    "custom/power": {
-        "format": "",
+    "custom/reboot": {
+        "format": "",
         "tooltip": false,
-        "on-click": "shutdown now"
+        "on-click": "reboot"
     }
 }
 
