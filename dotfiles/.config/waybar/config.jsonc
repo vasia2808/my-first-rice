@@ -40,8 +40,10 @@
 			"paused": ""
 		},
 		"max-length": 60,
-		"on-scroll-up": "playerctl next",
-		"on-scroll-down": "playerctl previous",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+		"on-click-forward": "playerctl next",
+		"on-click-backward": "playerctl previous",
         "on-click-middle": "",
         "on-click-right": "",
         "tooltip-format": "{dynamic}",
@@ -75,7 +77,9 @@
         "on-click": "hyprctl switchxkblayout obins-obins-annepro2 next > /dev/null",
         "on-click-right": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null",
         "on-scroll-up": "hyprctl switchxkblayout obins-obins-annepro2 next > /dev/null",
-        "on-scroll-down": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null"
+        "on-scroll-down": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null",
+        "on-click-forward": "hyprctl switchxkblayout obins-obins-annepro2 next > /dev/null",
+        "on-click-backward": "hyprctl switchxkblayout obins-obins-annepro2 prev > /dev/null"
     },
     "clock": {
         "locale": "en_GB.UTF-8",
@@ -90,7 +94,9 @@
         "actions": {
             "on-click": "shift_reset",
             "on-scroll-up": "shift_up",
-            "on-scroll-down": "shift_down"
+            "on-scroll-down": "shift_down",
+            "on-click-forward": "shift_up",
+            "on-click-backward": "shift_down"
         }
     },
     "group/power": {
