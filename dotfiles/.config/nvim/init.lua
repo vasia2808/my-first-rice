@@ -143,10 +143,12 @@ vim.opt.ruler = false
 
 vim.opt.guicursor = 'n-v-o-r-cr:block-blinkoff600-blinkon600,i-c-ci-ve:ver20-blinkoff600-blinkon600'
 vim.opt.cursorline = true
+vim.opt.scrolloff = 2
 
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
+vim.opt.indentexpr = ''
 
 vim.opt.number = true
 vim.opt.relativenumber = true
