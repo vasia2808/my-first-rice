@@ -83,6 +83,7 @@ ln -sfn "$RICE_DIR/GTK/volantes_light_cursors" "$ICONS_DIR/volantes_light_cursor
 ln -sfn "$RICE_DIR/GTK/default" "$ICONS_DIR/default"
 
 gsettings set org.gnome.desktop.interface gtk-theme 'Material-Black-Cherry-BE-Custom'
+gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Material-Black-Cherry-Numix-Custom'
 gsettings set org.gnome.desktop.wm.preferences button-layout ':'
 gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 11'
