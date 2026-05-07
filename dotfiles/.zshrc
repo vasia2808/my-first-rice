@@ -10,6 +10,8 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 
+setopt correct
+
 HISTFILE=~/.zhistory
 HISTSIZE=10000
 SAVEHIST=10000
