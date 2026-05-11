@@ -9,7 +9,7 @@
     on_song_change: None,
     volume_step: 5,
     max_fps: 30,
-    scrolloff: 0,
+    scrolloff: 2,
     wrap_navigation: false,
     enable_mouse: true,
     scroll_amount: 1,

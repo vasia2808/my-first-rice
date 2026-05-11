@@ -1,8 +1,8 @@
 vim.pack.add({
-    'https://github.com/RRethy/base16-nvim',
-    'https://github.com/nvim-lualine/lualine.nvim',
-    'https://github.com/nvimdev/dashboard-nvim',
-    'https://github.com/nvim-tree/nvim-web-devicons'
+  'https://github.com/RRethy/base16-nvim',
+  'https://github.com/nvim-lualine/lualine.nvim',
+  'https://github.com/nvimdev/dashboard-nvim',
+  'https://github.com/nvim-tree/nvim-web-devicons'
 })
 
 vim.cmd.colorscheme('base16-espresso')
@@ -83,7 +83,7 @@ require('lualine').setup {
       },
       command = {
         a = { fg = colors.color2, bg = colors.color10, gui = 'bold' },
-      },
+      }
     },
     component_separators = { left = '', right = ''},
     section_separators = { left = '', right = ''}
@@ -113,7 +113,7 @@ require('lualine').setup {
     lualine_z = {
       {
         'location',
-        color = mode_color,
+        color = mode_color
       }
     }
   }
@@ -134,7 +134,7 @@ require('dashboard').setup {
     packages = { enable = false },
     project = { enable = false },
     mru = { enable = true, },
-    footer = {},
+    footer = {}
   }
 }
 
@@ -153,7 +153,7 @@ vim.opt.indentexpr = ''
 vim.opt.number = true
 vim.opt.relativenumber = true
 
-vim.opt.fillchars:append { eob = ' ' }
+vim.opt.fillchars = { eob = ' ' }
 
-vim.g.mapleader = " "
+vim.g.mapleader = ' '
 
