@@ -44,7 +44,7 @@
         "on-scroll-down": "playerctl previous",
 		"on-click-forward": "playerctl next",
 		"on-click-backward": "playerctl previous",
-        "on-click-middle": "",
+        "on-click-middle": "pkill rmpc || alacritty -e rmpc",
         "on-click-right": "",
         "tooltip-format": "{dynamic}",
         "dynamic-order": ["artist", "album"]
