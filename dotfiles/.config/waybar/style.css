@@ -32,6 +32,7 @@ tooltip label {
     color: inherit;
     border-radius: 0px;
     border: none;
+    padding: 1px 5px;
 }
 
 #workspaces button:hover {
