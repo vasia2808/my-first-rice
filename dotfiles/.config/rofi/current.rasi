@@ -27,6 +27,7 @@
     normal-foreground:           var(foreground);
     alternate-urgent-foreground: var(red);
     alternate-active-foreground: var(blue);
+    scroll-handle:               rgba(216, 216, 216, 0.55);
 }
 element {
     padding: 5px ;
@@ -116,7 +117,7 @@ scrollbar {
     padding:      0;
     handle-width: 8px ;
     border:       0;
-    handle-color: var(normal-foreground);
+    handle-color: var(scroll-handle);
 }
 sidebar {
     border-color: var(separatorcolor);
