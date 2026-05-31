@@ -1,5 +1,6 @@
 {
     "layer": "top",
+    "height": 30,
     "reload_style_on_change": true,
     "modules-left": [
         "custom/rofi",
@@ -27,10 +28,16 @@
         "tooltip": false
     },
     "hyprland/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "default": "",
+            "active": "",
+            "urgent": ""
+        },
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
         "persistent-workspaces": {
-            "*": 9
+            "*": 7
         }
     },
     "mpris": {
