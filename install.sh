@@ -10,15 +10,16 @@ packages=(
     alacritty
     engrampa
     fastfetch
-    firefox
     ffmpeg-audio-thumbnailer
     ffmpegthumbnailer
-    gvfs-mtp
+    firefox
     grim
+    gvfs-mtp
     hypridle
     hyprland
     hyprlock
     hyprpaper
+    intel-media-driver
     kid3-qt
     mako
     mpd
@@ -28,8 +29,8 @@ packages=(
     neovim
     noto-fonts-cjk
     otf-font-awesome
-    pavucontrol
     paru
+    pavucontrol
     pipewire-jack
     pipewire-pulse
     playerctl
@@ -41,11 +42,11 @@ packages=(
     telegram-desktop
     thunar
     thunar-archive-plugin
-    tumbler
     ttf-jetbrains-mono-nerd
+    tumbler
     waybar
-    wl-clipboard
     wl-clip-persist
+    wl-clipboard
     xdg-desktop-portal-hyprland
     zsh
 )
