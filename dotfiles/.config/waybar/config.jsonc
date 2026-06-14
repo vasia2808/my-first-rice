@@ -60,10 +60,9 @@
         "spacing": 10
     },
     "wireplumber": {
-        "scroll-step": 1,
-        "format": "{icon} {volume}%",
+        "scroll-step": 2,
+        "format": " {volume}%",
         "format-muted": " {volume}%",
-        "format-icons": [""],
         "on-click": "pkill pavucontrol || pavucontrol",
         "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 
