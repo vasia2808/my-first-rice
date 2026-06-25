@@ -28,6 +28,7 @@ packages=(
     mpv-mpris
     neovim
     noto-fonts-cjk
+    noto-fonts-emoji
     otf-font-awesome
     paru
     pavucontrol
