@@ -27,6 +27,7 @@ packages=(
     mpv
     mpv-mpris
     neovim
+    noto-fonts
     noto-fonts-cjk
     noto-fonts-emoji
     otf-font-awesome
