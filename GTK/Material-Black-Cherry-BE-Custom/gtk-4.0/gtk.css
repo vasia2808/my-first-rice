@@ -42,7 +42,7 @@ radio:active, row.activatable:active, listview > row:active, expander:active, ca
  */
 .background {
   background-color: #191319;
-  color: d8d8d8;
+  color: #d8d8d8;
 }
 
 dnd {
