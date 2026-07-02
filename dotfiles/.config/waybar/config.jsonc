@@ -88,7 +88,6 @@
         "on-click-backward": "hyprctl switchxkblayout obins-obins-annepro2 prev"
     },
     "clock": {
-        "locale": "en_GB.UTF-8",
         "tooltip-format": "<tt><small><span font-family='JetBrainsMono Nerd Font'>{calendar}</span></small></tt>",
         "calendar": {
             "format": {
