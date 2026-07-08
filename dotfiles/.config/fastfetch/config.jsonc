@@ -45,6 +45,5 @@
       "key": "",
       "format": "{size-used} / {size-total}"
     },
-    "break"
   ]
 }

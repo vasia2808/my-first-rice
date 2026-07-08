@@ -22,6 +22,7 @@ export LS_COLORS='di=31'
 alias vim='nvim'
 alias ls='ls --color=auto --group-directories-first'
 alias grep='grep --color=auto'
+alias clear='clear && fastfetch'
 
 bindkey '^H' backward-kill-word
 bindkey '^[[H' beginning-of-line
@@ -30,3 +31,4 @@ bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
 
 fastfetch
+
