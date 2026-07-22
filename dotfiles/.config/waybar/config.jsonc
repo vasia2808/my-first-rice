@@ -14,6 +14,8 @@
         "custom/separator",
         "wireplumber",
         "custom/separator",
+        "backlight",
+        "custom/separator",
         "network",
         "custom/separator",
         "hyprland/language",
@@ -56,20 +58,28 @@
         "tooltip-format": "{dynamic}",
         "dynamic-order": ["artist", "album"]
     },
+    "custom/separator": {
+        "format": "|",
+        "tooltip": false
+    },
     "tray": {
         "spacing": 10
     },
     "wireplumber": {
-        "scroll-step": 2,
         "format": " {volume}%",
         "format-muted": " {volume}%",
+        "scroll-step": 2,
         "on-click": "pkill pavucontrol || pavucontrol",
         "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 
     },
-    "custom/separator": {
-        "format": "|",
-        "tooltip": false
+    "backlight": {
+        "format": "󰃠 {percent}%",
+        "tooltip": false,
+        "scroll-step": 2,
+        "on-click": "brightnessctl set 0%",
+        "on-click-middle": "brightnessctl set 50%",
+        "on-click-right": "brightnessctl set 100%"
     },
     "network": {
         "format-wifi": " {signalStrength}%",
