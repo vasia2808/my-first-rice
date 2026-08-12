@@ -33,7 +33,7 @@
     {
       "type": "gpu",
       "key": "󰾲",
-      "format": "{vendor} {name}"
+      "format": "{name}"
     },
     {
       "type": "memory",
