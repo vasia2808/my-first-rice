@@ -1,5 +1,18 @@
 {
+    "Music": {
+        "download_path": null,
+        "inactive_seeding_time_limit": -2,
+        "ratio_limit": -2,
+        "save_path": "/home/vasya/Music",
+        "seeding_time_limit": -2,
+        "share_limit_action": "Default"
+    },
     "Videos": {
-        "save_path": "/home/vasya/Videos"
+        "download_path": null,
+        "inactive_seeding_time_limit": -2,
+        "ratio_limit": -2,
+        "save_path": "/home/vasya/Videos",
+        "seeding_time_limit": -2,
+        "share_limit_action": "Default"
     }
 }
