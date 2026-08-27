@@ -13,13 +13,13 @@ packages=(
     ffmpeg-audio-thumbnailer
     ffmpegthumbnailer
     firefox
+    flacon
     grim
     gvfs-mtp
     hypridle
     hyprland
     hyprlock
     hyprpaper
-    intel-media-driver
     kid3-qt
     mako
     mpd
@@ -39,6 +39,7 @@ packages=(
     polkit-gnome
     qbittorrent
     qimgv
+    realtime-privileges
     rmpc
     rofi-wayland
     telegram-desktop
@@ -102,4 +103,5 @@ if [ ! -e "/usr/bin/konsole" ]; then
 fi
 
 sudo cp -r getty@tty1.service.d /etc/systemd/system
+sudo usermod -aG realtime $USER
 
