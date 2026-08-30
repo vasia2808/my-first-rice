@@ -11,21 +11,15 @@
     ],
     "modules-right": [
         "tray",
-        "custom/separator",
         "wireplumber",
-        "custom/separator",
         "backlight",
-        "custom/separator",
         "network",
-        "custom/separator",
         "hyprland/language",
-        "custom/separator",
         "clock",
-        "custom/separator",
         "group/power"
     ],
     "custom/rofi": {
-        "format": "",
+        "format": "<span color='#d1524d'></span>",
         "on-click": "pkill rofi || rofi -show drun -location 1",
         "tooltip": false
     },
@@ -43,7 +37,7 @@
         }
     },
     "mpris": {
-        "format": "{status_icon} {title}",
+        "format": "<span color='#d1524d'>{status_icon}</span> {title}",
 		"status-icons": {
 			"playing": "",
 			"paused": ""
@@ -66,15 +60,15 @@
         "spacing": 10
     },
     "wireplumber": {
-        "format": " {volume}%",
-        "format-muted": " {volume}%",
+        "format": "<span color='#d1524d'></span> {volume}%",
+        "format-muted": "<span color='#d1524d'></span> {volume}%",
         "scroll-step": 2,
         "on-click": "pkill pavucontrol || pavucontrol",
         "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
 
     },
     "backlight": {
-        "format": "󰃠 {percent}%",
+        "format": "<span color='#d1524d'>󰃠</span> {percent}%",
         "tooltip": false,
         "scroll-step": 2,
         "on-click": "brightnessctl set 0%",
@@ -82,14 +76,14 @@
         "on-click-right": "brightnessctl set 100%"
     },
     "network": {
-        "format-wifi": " {signalStrength}%",
-        "format-disconnected": "⚠ Disconnected",
+        "format-wifi": "<span color='#d1524d'></span> {signalStrength}%",
+        "format-disconnected": "<span color='#d1524d'>⚠</span> Disconnected",
         "tooltip-format-wifi": "{essid}"
     },
     "hyprland/language": {
-        "format-en": "EN",
-        "format-ru": "RU",
-        "format-uk": "UA",
+        "format-en": "<span color='#d1524d'>󰌌</span> EN",
+        "format-ru": "<span color='#d1524d'>󰌌</span> RU",
+        "format-uk": "<span color='#d1524d'>󰌌</span> UA",
         "on-click": "hyprctl switchxkblayout obins-obins-annepro2 next",
         "on-click-right": "hyprctl switchxkblayout obins-obins-annepro2 prev",
         "on-scroll-up": "hyprctl switchxkblayout obins-obins-annepro2 next",
@@ -98,12 +92,13 @@
         "on-click-backward": "hyprctl switchxkblayout obins-obins-annepro2 prev"
     },
     "clock": {
+        "format": "<span color='#d1524d'>󰥔</span> {:%H:%M}",
         "tooltip-format": "<tt><small><span font-family='JetBrainsMono Nerd Font'>{calendar}</span></small></tt>",
         "calendar": {
             "format": {
                 "months": "<span color='#ffead3'><b>{}</b></span>",
                 "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-                "today": "<span color='#d14e49'><b>{}</b></span>"
+                "today": "<span color='#d1524d'><b>{}</b></span>"
             }
         },
         "actions": {
@@ -118,7 +113,7 @@
         "orientation": "inherit",
         "drawer": {
             "transition-duration": 400,
-            "children-class": "drawer-child",
+            "children-class": "not-power",
             "transition-left-to-right": false
         },
         "modules": [
@@ -129,22 +124,22 @@
         ]
     },
     "custom/power": {
-        "format": "",
+        "format": "<span color='#d1524d'></span>",
         "tooltip": false,
         "on-click": "shutdown now"
     },
     "custom/lock": {
-        "format": "󰍁",
+        "format": "<span color='#d1524d'>󰍁</span>",
         "tooltip": false,
         "on-click": "hyprlock"
     },
     "custom/suspend": {
-        "format": "",
+        "format": "<span color='#d1524d'></span>",
         "tooltip": false,
         "on-click": "systemctl suspend"
     },
     "custom/reboot": {
-        "format": "",
+        "format": "<span color='#d1524d'></span>",
         "tooltip": false,
         "on-click": "reboot"
     }
