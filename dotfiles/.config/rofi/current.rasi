@@ -90,7 +90,7 @@ window {
     border-color:     var(border-color);
     border-radius: 5px;
     width: 500px;
-    height: 300px;
+    height: 302px;
 }
 mainbox {
     padding: 0;
@@ -146,10 +146,10 @@ textbox-num-sep {
     text-color: Gray;
 }
 inputbar {
-    padding:    1px ;
+    padding:    5px 1px;
     spacing:    0px ;
     text-color: var(normal-foreground);
-    children:   [ "prompt","textbox-prompt-colon","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
+    children:   [ "prompt","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
 }
 case-indicator {
     spacing:    0;
@@ -160,15 +160,10 @@ entry {
     cursor:            text;
     spacing:           0;
     placeholder-color: Gray;
-    placeholder:       "Type to filter";
+    placeholder:       "Search";
 }
 prompt {
+    margin: 0px 0.3em;
     spacing:    0;
     text-color: var(normal-foreground);
-}
-textbox-prompt-colon {
-    margin:     0px 0.3000em 0.0000em 0.0000em ;
-    expand:     false;
-    str:        ":";
-    text-color: inherit;
 }

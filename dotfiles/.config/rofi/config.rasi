@@ -155,7 +155,7 @@ configuration {
     sorting-method:    "name";
   }
   drun {
-    display-name: "Search";
+    display-name: " ";
   }
 }
 @theme "current"
