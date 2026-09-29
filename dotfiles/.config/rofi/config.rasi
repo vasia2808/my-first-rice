@@ -28,7 +28,7 @@ configuration {
 /*	case-sensitive: false;*/
 	cycle: false;
 /*	sidebar-mode: false;*/
-/*	hover-select: false;*/
+	hover-select: true;
 /*	eh: 1;*/
 /*	auto-select: false;*/
 /*	parse-hosts: false;*/
@@ -143,8 +143,8 @@ configuration {
 /*	ml-row-right: "ScrollRight";*/
 /*	ml-row-up: "ScrollUp";*/
 /*	ml-row-down: "ScrollDown";*/
-/*	me-select-entry: "MousePrimary";*/
-	me-accept-entry: "!MousePrimary";
+	me-select-entry: "";
+	me-accept-entry: "MousePrimary";
 /*	me-accept-custom: "Control+MouseDPrimary";*/
   timeout {
     action: "kb-cancel";
