@@ -91,6 +91,8 @@ window {
     border-radius: 5px;
     width: 500px;
     height: 302px;
+    x-offset: 3px;
+    y-offset: 3px;
 }
 mainbox {
     padding: 0;
