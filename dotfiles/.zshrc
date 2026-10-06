@@ -10,6 +10,9 @@ autoload -Uz compinit
 compinit
 zstyle ':completion:*' menu select
 
+autoload -U select-word-style
+select-word-style bash
+
 setopt correct
 
 HISTFILE=~/.zhistory
@@ -29,6 +32,7 @@ bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
+bindkey '^_' undo
 
 fastfetch
 
