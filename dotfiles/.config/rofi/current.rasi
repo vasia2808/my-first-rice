@@ -28,12 +28,14 @@
     alternate-urgent-foreground: var(red);
     alternate-active-foreground: var(blue);
     scroll-handle:               rgba(216, 216, 216, 0.55);
+    search-background:           rgba(40, 33, 39, 0.8);
 }
 element {
-    padding: 5px ;
+    padding: 8px ;
     cursor:  pointer;
-    spacing: 5px ;
+    spacing: 8px ;
     border:  0;
+    border-radius: 3px;
 }
 element normal.normal {
     background-color: var(normal-background);
@@ -76,27 +78,29 @@ element-text {
     cursor:           inherit;
     highlight:        inherit;
     text-color:       inherit;
+    vertical-align: 0.5;
 }
 element-icon {
     background-color: transparent;
-    size:             1.0000em ;
+    size:             1.2000em ;
     cursor:           inherit;
     text-color:       inherit;
 }
 window {
-    padding:          5;
+    padding:          10px;
     background-color: var(background);
     border:           2;
     border-color:     var(border-color);
     border-radius: 5px;
     width: 500px;
-    height: 302px;
+    height: 317px;
     x-offset: 3px;
     y-offset: 3px;
 }
 mainbox {
     padding: 0;
     border:  0;
+    spacing: 5px;
 }
 message {
     padding:      1px ;
@@ -134,28 +138,13 @@ button selected {
     background-color: var(selected-normal-background);
     text-color:       var(selected-normal-foreground);
 }
-num-filtered-rows {
-    expand:     false;
-    text-color: Gray;
-}
-num-rows {
-    expand:     false;
-    text-color: Gray;
-}
-textbox-num-sep {
-    expand:     false;
-    str:        "/";
-    text-color: Gray;
-}
 inputbar {
-    padding:    5px 1px;
-    spacing:    0px ;
+    background-color: var(search-background);
+    border-radius: 3px;
+    padding:    8px 8px;
+    spacing:    1px ;
     text-color: var(normal-foreground);
-    children:   [ "prompt","entry","num-filtered-rows","textbox-num-sep","num-rows","case-indicator" ];
-}
-case-indicator {
-    spacing:    0;
-    text-color: var(normal-foreground);
+    children:   [ "prompt","entry" ];
 }
 entry {
     text-color:        var(normal-foreground);

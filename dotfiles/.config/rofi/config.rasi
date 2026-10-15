@@ -19,7 +19,7 @@ configuration {
 /*	drun-match-fields: "name,generic,exec,categories,keywords";*/
 /*	drun-categories: ;*/
 /*	drun-show-actions: false;*/
-/*	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";*/
+	drun-display-format: "{name} [<span weight='light' color='#a0a0a0' size='small'><i>({generic})</i></span>]";
 /*	drun-url-launcher: "xdg-open";*/
 /*	disable-history: false;*/
 /*	ignored-prefixes: "";*/
@@ -62,7 +62,7 @@ configuration {
 /*	display-window: ;*/
 /*	display-run: ;*/
 /*	display-ssh: ;*/
-/*	display-drun: ;*/
+	display-drun: " ";
 /*	display-combi: ;*/
 /*	display-keys: ;*/
 /*	display-filebrowser: ;*/
@@ -153,9 +153,6 @@ configuration {
   filebrowser {
     directories-first: true;
     sorting-method:    "name";
-  }
-  drun {
-    display-name: " ";
   }
 }
 @theme "current"
