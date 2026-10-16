@@ -28,7 +28,7 @@
     alternate-urgent-foreground: var(red);
     alternate-active-foreground: var(blue);
     scroll-handle:               rgba(216, 216, 216, 0.55);
-    search-background:           rgba(40, 33, 39, 0.8);
+    search-background:           rgba(40, 34, 39, 0.8);
     search-prompt-foreground:    rgba(216, 216, 216, 0.55);
 }
 element {
