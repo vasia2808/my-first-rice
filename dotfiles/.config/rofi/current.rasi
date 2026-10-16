@@ -1,7 +1,7 @@
 * {
     red:                         rgba ( 220, 50, 47, 100 % );
     selected-active-foreground:  var(background);
-    lightfg:                     rgba ( 79, 68, 77, 0.8 );
+    lightfg:                     rgba ( 75, 65, 73, 0.8 );
     separatorcolor:              var(foreground);
     urgent-foreground:           var(red);
     alternate-urgent-background: var(lightbg);
@@ -31,9 +31,9 @@
     search-background:           rgba(40, 33, 39, 0.8);
 }
 element {
-    padding: 8px ;
+    padding: 7px 8px;
     cursor:  pointer;
-    spacing: 8px ;
+    spacing: 7px ;
     border:  0;
     border-radius: 3px;
 }
@@ -82,7 +82,7 @@ element-text {
 }
 element-icon {
     background-color: transparent;
-    size:             1.2000em ;
+    size:             1.1000em ;
     cursor:           inherit;
     text-color:       inherit;
 }
@@ -93,14 +93,13 @@ window {
     border-color:     var(border-color);
     border-radius: 5px;
     width: 500px;
-    height: 317px;
-    x-offset: 3px;
     y-offset: 3px;
+    location: north;
 }
 mainbox {
     padding: 0;
     border:  0;
-    spacing: 5px;
+    spacing: 0px;
 }
 message {
     padding:      1px ;
@@ -111,11 +110,14 @@ textbox {
     text-color: var(foreground);
 }
 listview {
-    padding:      2px 0px 0px ;
+    padding:      7px 0px 0px ;
     scrollbar:    true;
     border-color: var(separatorcolor);
     spacing:      2px ;
-    fixed-height: 0;
+    lines: 7;
+    require-input: true;
+    dynamic: true;
+    fixed-height: false;
     border:       0px dash 0px 0px ;
 }
 scrollbar {
@@ -141,8 +143,8 @@ button selected {
 inputbar {
     background-color: var(search-background);
     border-radius: 3px;
-    padding:    8px 8px;
-    spacing:    1px ;
+    padding:    7px 7px;
+    spacing:    0px ;
     text-color: var(normal-foreground);
     children:   [ "prompt","entry" ];
 }
@@ -151,7 +153,7 @@ entry {
     cursor:            text;
     spacing:           0;
     placeholder-color: Gray;
-    placeholder:       "Search";
+    placeholder:       "Search applications...";
 }
 prompt {
     margin: 0px 0.3em;

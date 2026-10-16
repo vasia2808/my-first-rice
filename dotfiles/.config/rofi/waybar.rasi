@@ -1,0 +1,7 @@
+@import "config.rasi"
+
+window {
+    x-offset: 3px;
+    location: north west;
+}
+

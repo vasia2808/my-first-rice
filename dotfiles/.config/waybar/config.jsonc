@@ -20,7 +20,7 @@
     ],
     "custom/rofi": {
         "format": "<span color='#d1524d'></span>",
-        "on-click": "pkill -x rofi || rofi -show drun -location 1",
+        "on-click": "pkill -x rofi || rofi -show drun -config \"$XDG_CONFIG_HOME/rofi/waybar.rasi\"",
         "tooltip": false
     },
     "hyprland/workspaces": {
