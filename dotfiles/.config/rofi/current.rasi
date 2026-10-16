@@ -29,6 +29,7 @@
     alternate-active-foreground: var(blue);
     scroll-handle:               rgba(216, 216, 216, 0.55);
     search-background:           rgba(40, 33, 39, 0.8);
+    search-prompt-foreground:    rgba(216, 216, 216, 0.55);
 }
 element {
     padding: 7px 8px;
@@ -152,7 +153,7 @@ entry {
     text-color:        var(normal-foreground);
     cursor:            text;
     spacing:           0;
-    placeholder-color: Gray;
+    placeholder-color: var(search-prompt-foreground);
     placeholder:       "Search applications...";
 }
 prompt {
