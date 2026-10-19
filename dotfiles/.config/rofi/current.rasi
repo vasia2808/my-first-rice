@@ -154,7 +154,8 @@ entry {
     cursor:            text;
     spacing:           0;
     placeholder-color: var(search-prompt-foreground);
-    placeholder:       "Search applications...";
+    placeholder-markup: true;
+    placeholder:       "<i>Search applications...</i>";
 }
 prompt {
     margin: 0px 0.3em;
