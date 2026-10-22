@@ -11,9 +11,9 @@
     ],
     "modules-right": [
         "tray",
+        "custom/warp",
         "wireplumber",
         "backlight",
-        "network",
         "hyprland/language",
         "clock",
         "group/power"
@@ -54,6 +54,13 @@
     },
     "tray": {
         "spacing": 10
+    },
+    "custom/warp": {
+        "format": "<span color='#d1524d'>󰌆</span> {}",
+        "interval": 2,
+        "return-type": "json",
+        "exec": "bash \"$XDG_CONFIG_HOME/waybar/scripts/warp_status.sh\"",
+        "on-click": "bash \"$XDG_CONFIG_HOME/waybar/scripts/warp_toggle.sh\""
     },
     "wireplumber": {
         "format": "<span color='#d1524d'></span> {volume}%",
