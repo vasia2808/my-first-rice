@@ -68,7 +68,9 @@
         "scroll-step": 2,
         "on-click": "pkill pavucontrol || pavucontrol",
         "on-click-middle": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
-        "on-click-right": "bash \"$XDG_CONFIG_HOME/waybar/scripts/change_sink.sh\""
+        "on-click-right": "bash \"$XDG_CONFIG_HOME/waybar/scripts/change_sink.sh\" next",
+        "on-click-forward": "bash \"$XDG_CONFIG_HOME/waybar/scripts/change_sink.sh\" next",
+        "on-click-backward": "bash \"$XDG_CONFIG_HOME/waybar/scripts/change_sink.sh\" previous"
 
     },
     "backlight": {
