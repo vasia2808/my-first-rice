@@ -27,7 +27,7 @@
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     pagecolor="#d8d8d8"
+     pagecolor="#c9c9c9"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -72,7 +72,7 @@
        id="path16" />
   </g>
   <path
-     style="fill:#d8d8d8;fill-opacity:.1"
+     style="fill:#c9c9c9;fill-opacity:.1"
      d="m 4.18107,4.5155557 -3.84658447,0 C -2.044444e-8,4.5155557 -2.044444e-8,4.5155557 -2.044444e-8,4.1986752 L 0,1.6933334 4.5155557,4.1986752 c 0,0.3168805 0,0.3168805 -0.3344857,0.3168805 z"
      id="path18" />
 </svg>

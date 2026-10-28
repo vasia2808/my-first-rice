@@ -10,8 +10,8 @@
    <path d="m 27.727 25.441 l 0 3.984 c 1.254 1.066 2.063 2.648 2.063 4.43 c 0 0.105 0 0.27 0 0.375 l -2.063 0 l 0 2.707 l 1.359 0 l 0 0.703 l 1.406 0 l 0 -0.703 l 1.313 0 l 0 -7.922 c -0.961 -1.559 -2.391 -2.813 -4.078 -3.574 Z" transform="scale(.33333)" style="fill:#6fac63;stroke:#6fac63;fill-rule:evenodd;stroke-linecap:round;stroke-width:0.681"/>
   </g>
   <linearGradient gradientTransform="matrix(.68089 0 0 .68085 19.21267 9.36186)" id="linear0" x1="9.531" gradientUnits="userSpaceOnUse" x2="11.468">
-   <stop style="stop-color:#d8d8d8"/>
-   <stop offset="1" style="stop-color:#d8d8d8;stop-opacity:0"/>
+   <stop style="stop-color:#c9c9c9"/>
+   <stop offset="1" style="stop-color:#c9c9c9;stop-opacity:0"/>
   </linearGradient>
   <mask id="mask0">
    <g style="filter:url(#alpha)">

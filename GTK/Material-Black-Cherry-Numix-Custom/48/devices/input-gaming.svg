@@ -8,5 +8,5 @@
  <ellipse cx="24" cy="20" rx="1.25" ry="1.25" style="stroke-dasharray:none;stroke-opacity:1;fill:none;opacity:1;stroke-miterlimit:4;fill-opacity:1;stroke:#3b3b3b;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:miter;stroke-width:0.5;stroke-dashoffset:0"/>
  <ellipse cx="21" cy="20" rx="1" ry="1" style="fill:#3b3b3b;opacity:1;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
  <ellipse cy="20" cx="27" rx="1" ry="1" style="fill:#3b3b3b;opacity:1;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
- <path d="m 34.15 10.504 c -0.049 -0.002 -0.102 0.006 -0.152 0.006 l 0 22.19 c 0.846 0.884 1.756 1.84 2.85 2.803 c 0.372 0.327 0.76 0.617 1.15 0.881 l 0 -23.57 c -0.414 -0.552 -0.84 -1.01 -1.271 -1.338 c -0.611 -0.464 -1.497 -0.925 -2.576 -0.969 z" style="fill:#d8d8d8;opacity:0.4;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
+ <path d="m 34.15 10.504 c -0.049 -0.002 -0.102 0.006 -0.152 0.006 l 0 22.19 c 0.846 0.884 1.756 1.84 2.85 2.803 c 0.372 0.327 0.76 0.617 1.15 0.881 l 0 -23.57 c -0.414 -0.552 -0.84 -1.01 -1.271 -1.338 c -0.611 -0.464 -1.497 -0.925 -2.576 -0.969 z" style="fill:#c9c9c9;opacity:0.4;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
 </svg>

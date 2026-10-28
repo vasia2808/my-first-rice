@@ -5,5 +5,5 @@
  <path d="m 3 14 -1.5 4 19 0 -1.5 -4 z" style="fill:#b5b5b5;fill-opacity:1;stroke:none"/>
  <path d="M 4,14.5 3.5,16 18.5,16 18,14.5 Z" style="fill:#757575;fill-opacity:1;stroke:none"/>
  <path d="m 9 17 0 0.5 4 0 0 -0.5 z" style="fill:#757575;fill-opacity:1;stroke:none"/>
- <rect height="11" style="fill:#d8d8d8;opacity:0.4;fill-opacity:1;stroke:none;fill-rule:nonzero" width="2" x="15" y="3"/>
+ <rect height="11" style="fill:#c9c9c9;opacity:0.4;fill-opacity:1;stroke:none;fill-rule:nonzero" width="2" x="15" y="3"/>
 </svg>

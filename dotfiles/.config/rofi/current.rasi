@@ -22,14 +22,14 @@
     active-background:           var(background);
     selected-normal-background:  var(lightfg);
     alternate-normal-background: transparent;
-    foreground:                  #d8d8d8;
+    foreground:                  #c9c9c9;
     selected-urgent-foreground:  var(background);
     normal-foreground:           var(foreground);
     alternate-urgent-foreground: var(red);
     alternate-active-foreground: var(blue);
-    scroll-handle:               rgba(216, 216, 216, 0.55);
+    scroll-handle:               rgba(201, 201, 201, 0.55);
     search-background:           rgba(40, 34, 39, 0.8);
-    search-prompt-foreground:    rgba(216, 216, 216, 0.55);
+    search-prompt-foreground:    rgba(201, 201, 201, 0.55);
 }
 element {
     padding: 7px 8px;

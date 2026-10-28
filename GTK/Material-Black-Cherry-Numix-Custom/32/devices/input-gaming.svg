@@ -9,6 +9,6 @@
   <ellipse ry="0.75" rx="0.75" cy="13.5" cx="16" style="stroke-dasharray:none;stroke-opacity:1;fill:none;opacity:1;stroke-miterlimit:4;fill-opacity:1;stroke:#3b3b3b;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:miter;stroke-width:0.5;stroke-dashoffset:0"/>
   <ellipse ry="0.5" rx="0.5" cy="13.5" cx="13.5" style="fill:#3b3b3b;opacity:1;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
   <circle r="0.5" cx="18.5" cy="13.5" style="fill:#3b3b3b;opacity:1;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
-  <path d="m 22.768 7 c -0.033 -0.001 -0.068 0.004 -0.102 0.004 l 0 14.792 c 0.564 0.589 1.17 1.226 1.9 1.868 0.248 0.218 0.506 0.412 0.767 0.587 l 0 -15.714 c -0.276 -0.368 -0.56 -0.674 -0.848 -0.892 -0.408 -0.309 -0.998 -0.617 -1.717 -0.646" style="fill:#d8d8d8;opacity:0.4;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
+  <path d="m 22.768 7 c -0.033 -0.001 -0.068 0.004 -0.102 0.004 l 0 14.792 c 0.564 0.589 1.17 1.226 1.9 1.868 0.248 0.218 0.506 0.412 0.767 0.587 l 0 -15.714 c -0.276 -0.368 -0.56 -0.674 -0.848 -0.892 -0.408 -0.309 -0.998 -0.617 -1.717 -0.646" style="fill:#c9c9c9;opacity:0.4;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
  </g>
 </svg>

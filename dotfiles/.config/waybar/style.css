@@ -5,7 +5,7 @@
 
 window#waybar {
     background-color: rgba(25, 19, 25, 0.92);
-    color: #d8d8d8;
+    color: #c9c9c9;
 }
 
 window#waybar > box {
@@ -20,7 +20,7 @@ tooltip {
 }
 
 tooltip label {
-    color: #d8d8d8;
+    color: #c9c9c9;
 }
 
 .module {
@@ -47,7 +47,7 @@ tooltip label {
 }
 
 #workspaces button.empty {
-    color: rgba(216, 216, 216, 0.55);
+    opacity: 0.55;
 }
 
 #clock {

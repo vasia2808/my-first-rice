@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
  <path d="m 10 16 0 24 c 0 4 0 4 4 4 l 20 0 c 4 0 4 0 4 -4 l 0 -24 c -8 0 -22 0 -28 0 z" style="fill:#dc322f"/>
- <g transform="matrix(-1,0,0,1,48,0)" style="fill:#d8d8d8;fill-opacity:0.667">
+ <g transform="matrix(-1,0,0,1,48,0)" style="fill:#c9c9c9;fill-opacity:0.667">
   <path d="m 14 20 0 20 4 0 0 -20 z"/>
   <path d="m 22 20 0 20 4 0 0 -20 z"/>
   <path d="m 30 20 0 20 4 0 0 -20 z"/>

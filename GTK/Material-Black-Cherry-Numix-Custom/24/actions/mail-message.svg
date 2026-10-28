@@ -6,6 +6,6 @@
  <g transform="translate(1,-2)">
   <path d="m 2,22 18,0 c 2,0 2,0 2,-2 L 22,8 0,20 c 0,2 0,2 2,2 z" style="fill-opacity:0.1"/>
   <path d="M 20,22 2,22 C 0,22 0,22 0,20 L 0,8 22,20 c 0,2 0,2 -2,2 z" style="fill:#268bd2"/>
-  <path d="M 0,8 11,14 22,8 C 22,6 22,6 20,6 L 2,6 C 0,6 0,6 0,8 Z" style="fill:#d8d8d8;fill-opacity:0.102"/>
+  <path d="M 0,8 11,14 22,8 C 22,6 22,6 20,6 L 2,6 C 0,6 0,6 0,8 Z" style="fill:#c9c9c9;fill-opacity:0.102"/>
  </g>
 </svg>

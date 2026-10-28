@@ -29,7 +29,7 @@
   <defs
      id="defs20" />
   <sodipodi:namedview
-     pagecolor="#d8d8d8"
+     pagecolor="#c9c9c9"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -72,7 +72,7 @@
        id="path14" />
   </g>
   <path
-     style="fill:#d8d8d8;fill-opacity:.102"
+     style="fill:#c9c9c9;fill-opacity:.102"
      d="M 59.257812 64 L 4.742188 64 C 0 64 0 64 0 59.507812 L 0 24 L 64 59.507812 C 64 64 64 64 59.257812 64 Z "
      id="path16" />
 </svg>

@@ -8,5 +8,5 @@
  <circle cx="8" cy="6.5" r="0.5" style="stroke-dasharray:none;stroke-opacity:1;fill:none;opacity:1;stroke-miterlimit:4;fill-opacity:1;stroke:#3b3b3b;fill-rule:nonzero;stroke-linecap:round;stroke-linejoin:miter;stroke-width:0.5;stroke-dashoffset:0"/>
  <ellipse cx="6.5" cy="6.5" rx="0.5" ry="0.5" style="fill:#3b3b3b;opacity:1;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
  <circle cy="6.5" cx="9.5" r="0.5" style="fill:#3b3b3b;opacity:1;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
- <path d="m 12 2.479 l 0 8.979 c 0.377 0.4 0.776 0.825 1.271 1.262 c 0.234 0.206 0.482 0.379 0.729 0.518 l 0 -9.416 c -0.25 -0.404 -0.508 -0.755 -0.777 -0.959 c -0.28 -0.213 -0.708 -0.41 -1.223 -0.383 z" style="fill:#d8d8d8;opacity:0.4;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
+ <path d="m 12 2.479 l 0 8.979 c 0.377 0.4 0.776 0.825 1.271 1.262 c 0.234 0.206 0.482 0.379 0.729 0.518 l 0 -9.416 c -0.25 -0.404 -0.508 -0.755 -0.777 -0.959 c -0.28 -0.213 -0.708 -0.41 -1.223 -0.383 z" style="fill:#c9c9c9;opacity:0.4;fill-opacity:1;stroke:none;fill-rule:nonzero"/>
 </svg>

@@ -5,6 +5,6 @@
  </g>
  <path d="m 6 16 l 20 0 l 0 16 l -20 0 Z" style="fill:#dc322f"/>
  <path d="m 32 7 c 0 3.865 -3.135 7 -7 7 c -3.865 0 -7 -3.135 -7 -7 0 -3.865 3.135 -7 7 -7 3.865 0 7 3.135 7 7" style="fill:#5d5d5d;fill-opacity:1;fill-rule:evenodd"/>
- <path d="m 21 3.5 3 0 0 7 -3 0 z" style="fill:#d8d8d8;fill-opacity:0.902"/>
- <path d="m 26 3.5 3 0 0 7 -3 0 z" style="fill:#d8d8d8;fill-opacity:0.902"/>
+ <path d="m 21 3.5 3 0 0 7 -3 0 z" style="fill:#c9c9c9;fill-opacity:0.902"/>
+ <path d="m 26 3.5 3 0 0 7 -3 0 z" style="fill:#c9c9c9;fill-opacity:0.902"/>
 </svg>

@@ -5,8 +5,8 @@
    <stop offset="1" style="stop-color:#ababcf"/>
   </linearGradient>
   <linearGradient gradientTransform="translate(0 2)" id="linear1" y1="13.962" y2="33.04" gradientUnits="userSpaceOnUse" x2="0">
-   <stop style="stop-color:#d8d8d8;stop-opacity:0.451"/>
-   <stop offset="1" style="stop-color:#d8d8d8;stop-opacity:0"/>
+   <stop style="stop-color:#c9c9c9;stop-opacity:0.451"/>
+   <stop offset="1" style="stop-color:#c9c9c9;stop-opacity:0"/>
   </linearGradient>
   <radialGradient cx="24.22" cy="45.26" gradientTransform="matrix(.51425 0 0 .03214 -1.45457 15.04525)" id="radial0" r="21.39" gradientUnits="userSpaceOnUse">
    <stop style="stop-color:#000;stop-opacity:0.302"/>

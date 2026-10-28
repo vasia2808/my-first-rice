@@ -3,6 +3,6 @@
  <path d="M -13 23 A 11 11 0 0 1 -24 34" style="stroke-dasharray:none;stroke-opacity:1;fill:none;opacity:1;stroke-miterlimit:4;stroke:#79d073;stroke-linecap:butt;stroke-linejoin:miter;stroke-width:2;stroke-dashoffset:0" transform="matrix(-1 0 0 1 0 0)"/>
  <path d="m 24 14 10 0" style="stroke-dasharray:none;stroke-opacity:1;fill:none;stroke-miterlimit:4;stroke:#79d073;stroke-linecap:butt;stroke-linejoin:miter;stroke-width:2"/>
  <path d="m 14 34 10 0" style="stroke-dasharray:none;stroke-opacity:1;fill:none;stroke-miterlimit:4;stroke:#79d073;stroke-linecap:butt;stroke-linejoin:miter;stroke-width:2"/>
- <rect style="stroke-dasharray:none;stroke-opacity:1;fill:#d8d8d8;opacity:1;stroke-miterlimit:4;fill-opacity:1;stroke:#888;fill-rule:nonzero;stroke-linecap:butt;stroke-linejoin:miter;stroke-width:2;stroke-dashoffset:0" width="15" height="12" x="6" y="8"/>
- <rect style="stroke-dasharray:none;stroke-opacity:1;fill:#d8d8d8;opacity:1;stroke-miterlimit:4;fill-opacity:1;stroke:#888;fill-rule:nonzero;stroke-linecap:butt;stroke-linejoin:miter;stroke-width:2;stroke-dashoffset:0" width="15" height="12" x="27" y="28"/>
+ <rect style="stroke-dasharray:none;stroke-opacity:1;fill:#c9c9c9;opacity:1;stroke-miterlimit:4;fill-opacity:1;stroke:#888;fill-rule:nonzero;stroke-linecap:butt;stroke-linejoin:miter;stroke-width:2;stroke-dashoffset:0" width="15" height="12" x="6" y="8"/>
+ <rect style="stroke-dasharray:none;stroke-opacity:1;fill:#c9c9c9;opacity:1;stroke-miterlimit:4;fill-opacity:1;stroke:#888;fill-rule:nonzero;stroke-linecap:butt;stroke-linejoin:miter;stroke-width:2;stroke-dashoffset:0" width="15" height="12" x="27" y="28"/>
 </svg>

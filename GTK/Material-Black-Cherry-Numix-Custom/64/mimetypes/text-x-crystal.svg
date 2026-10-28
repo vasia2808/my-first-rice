@@ -26,7 +26,7 @@
   <defs
      id="defs16" />
   <sodipodi:namedview
-     pagecolor="#d8d8d8"
+     pagecolor="#c9c9c9"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -57,11 +57,11 @@
        id="path8" />
     <path
        d="m 38 0 l 17.984 18 l -15.227 0 c -1.348 0 -2.758 -1.426 -2.758 -2.773 m 0 -15.227"
-       style="fill:#d8d8d8;fill-opacity:0.392;stroke:none;fill-rule:nonzero"
+       style="fill:#c9c9c9;fill-opacity:0.392;stroke:none;fill-rule:nonzero"
        id="path10" />
     <path
        d="m 22,24 -4,4 0,6.664 L 32,48 46,34.664 46,28 42,24 m -16,2 0,8 6,12 -8,-12 0,-6 m 2,-2"
-       style="fill:#d8d8d8;fill-opacity:1;fill-rule:nonzero;stroke:none"
+       style="fill:#c9c9c9;fill-opacity:1;fill-rule:nonzero;stroke:none"
        id="path12"
        inkscape:connector-curvature="0" />
   </g>
