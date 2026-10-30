@@ -33,7 +33,7 @@ tooltip label {
     border-radius: 0px;
     border: none;
     padding: 0px;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 #workspaces button:last-child {
@@ -48,6 +48,10 @@ tooltip label {
 
 #workspaces button.empty {
     opacity: 0.55;
+}
+
+#workspaces button label {
+    font-size: 14px;
 }
 
 #clock {
