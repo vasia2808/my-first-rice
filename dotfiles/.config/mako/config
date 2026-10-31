@@ -5,4 +5,7 @@ border-color=#8c2d2aff
 border-radius=3
 default-timeout=5000
 margin=4
+padding=10
+max-icon-size=48
+width=350
 
