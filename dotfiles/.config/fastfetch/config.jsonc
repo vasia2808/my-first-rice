@@ -20,7 +20,10 @@
   },
   "modules": [
     "title",
-    "separator",
+    {
+      "type": "separator",
+      "outputColor": "#b4b4b4"
+    },
     {
       "type": "uptime",
       "key": ""
@@ -38,12 +41,12 @@
     {
       "type": "memory",
       "key": "",
-      "format": "{used} / {total}"
+      "format": "{used} {##a8a8a8}/{#} {total}"
     },
     {
       "type": "disk",
       "key": "",
-      "format": "{size-used} / {size-total}"
-    },
+      "format": "{size-used} {##a8a8a8}/{#} {size-total}"
+    }
   ]
 }
