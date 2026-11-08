@@ -30,8 +30,9 @@
             "active": "",
             "urgent": ""
         },
-        "on-scroll-up": "hyprctl dispatch workspace e+1",
-        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "tooltip": false,
+        "on-scroll-up": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"e+1\" })'",
+        "on-scroll-down": "hyprctl dispatch 'hl.dsp.focus({ workspace = \"e-1\" })'",
         "persistent-workspaces": {
             "*": [1, 2, 3, 4, 5, 6]
         }
@@ -53,7 +54,11 @@
         "dynamic-order": ["artist", "album"]
     },
     "tray": {
-        "spacing": 10
+        "spacing": 10,
+        "orders": {
+            "TelegramDesktop": 1,
+            "qBittorrent": 2
+        }
     },
     "custom/warp": {
         "format": "<span color='#d1524d'>󰌆</span> {}",
