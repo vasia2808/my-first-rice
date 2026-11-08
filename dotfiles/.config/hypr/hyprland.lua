@@ -221,13 +221,13 @@ hl.window_rule({
 })
 
 hl.layer_rule({
-  match = { namespace = "rofi" },
+  match = { namespace = [[^rofi$]] },
   animation = "slide top",
   dim_around = true
 })
 
 hl.layer_rule({
-  match = { namespace = "notifications" },
+  match = { namespace = [[^notifications$]] },
   animation = "slide right"
 })
 
