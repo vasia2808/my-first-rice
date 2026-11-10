@@ -148,92 +148,35 @@
                 direction: Horizontal,
                 panes: [
                     (
+                        size: "1",
+                        pane: Pane(Empty()),
+                    ),
+                    (
                         size: "100%",
-                        pane: Split(
-                            direction: Vertical,
-                            panes: [
-                                (
-                                    size: "1",
-                                    pane: Pane(Empty())
-                                ),
-                                (
-                                    size: "2",
-                                    borders: "BOTTOM",
-                                    pane: Split(
-                                        direction: Horizontal,
-                                        panes: [
-                                            (
-                                                size: "1",
-                                                pane: Pane(Empty())
-                                            ),
-                                            (
-                                                size: "100%",
-                                                pane: Pane(QueueHeader())
-                                            ),
-                                        ]
-                                    )
-                                ),
-                                (
-                                    size: "100%",
-                                    pane: Split(
-                                        direction: Horizontal,
-                                        panes: [
-                                            (
-                                                size: "1",
-                                                pane: Pane(Empty())
-                                            ),
-                                            (
-                                                size: "100%",
-                                                pane: Pane(Queue)
-                                            ),
-                                        ]
-                                    )
-                                ),
-                            ],
-                        )
+                        pane: Pane(Queue),
                     ),
                 ],
             ),
         ),
         (
             name: "Directories",
-            pane: Split(
-                size: "100%",
-                direction: Vertical,
-                panes: [(pane: Pane(Directories), size: "100%", borders: "TOP")],
-            )
+            pane: Pane(Directories),
         ),
         (
             name: "Artists",
-            pane: Split(
-                size: "100%",
-                direction: Vertical,
-                panes: [(pane: Pane(Artists), size: "100%", borders: "TOP")],
-            )
+            pane: Pane(Artists),
         ),
         (
             name: "Albums",
-            pane: Split(
-                size: "100%",
-                direction: Vertical,
-                panes: [(pane: Pane(Albums), size: "100%", borders: "TOP")],
-            )
+            pane: Pane(Albums),
         ),
         (
             name: "Playlists",
-            pane: Split(
-                size: "100%",
-                direction: Vertical,
-                panes: [(pane: Pane(Playlists), size: "100%", borders: "TOP")],
-            )
+            pane: Pane(Playlists),
         ),
         (
             name: "Search",
-            pane: Split(
-                size: "100%",
-                direction: Vertical,
-                panes: [(pane: Pane(Search), size: "100%", borders: "TOP")],
-            )
+            pane: Pane(Search),
         ),
     ],
-)
+),
