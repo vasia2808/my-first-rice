@@ -2,7 +2,7 @@ hl.monitor({
   output = "HDMI-A-1",
   mode = "1920x1080@60",
   position = "0x0",
-  scale = 1,
+  scale = 1
 })
 
 hl.monitor({
@@ -45,7 +45,9 @@ local qbittorrent_handler
 
 qbittorrent_handler = hl.on("window.open", function(window)
   if window.class == "org.qbittorrent.qBittorrent" then
-    hl.dispatch(hl.dsp.window.close({ window = window }))
+    hl.timer(function()
+      hl.dispatch(hl.dsp.window.close({ window = window }))
+    end, { timeout = 1000, type = "oneshot" })
     qbittorrent_handler:remove()
   end
 end)
@@ -206,7 +208,7 @@ hl.window_rule({
 })
 
 hl.window_rule({
-  match = { class = [[org\.qbittorrent\.qBittorrent]], title = [[negative:^qBittorrent.*$]] },
+  match = { class = [[^org\.qbittorrent\.qBittorrent$]], title = [[negative:^qBittorrent.*$]] },
   float = true
 })
 
