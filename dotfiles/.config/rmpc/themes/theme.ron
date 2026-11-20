@@ -2,7 +2,7 @@
 #![enable(unwrap_newtypes)]
 #![enable(unwrap_variant_newtypes)]
 (
-    default_album_art_path: None,
+    default_album_art_path: Some("~/.config/rmpc/themes/default.jpg"),
     format_tag_separator: " | ",
     browser_column_widths: [20, 38, 42],
     background_color: None,
@@ -12,8 +12,8 @@
     modal_backdrop: false,
     preview_label_style: (fg: "red", modifiers: "Bold"),
     preview_metadata_group_style: (fg: "red", modifiers: "Bold"),
-    highlighted_item_style: (fg: "gray", modifiers: "Bold"),
-    current_item_style: (fg: "#191319", bg: "gray", modifiers: "Bold"),
+    highlighted_item_style: (fg: "red", modifiers: "Bold"),
+    current_item_style: (fg: "#191319", bg: "red", modifiers: "Bold"),
     borders_style: (fg: "#888888"),
     highlight_border_style: (fg: "gray"),
     symbols: (
@@ -22,9 +22,9 @@
         playlist: "󰲸",
         marker: " ",
         ellipsis: "…",
-        song_style: None,
-        dir_style: None,
-        playlist_style: None,
+        song_style: (fg: "red"),
+        dir_style: (fg: "red"),
+        playlist_style: (fg: "red"),
     ),
     level_styles: (
         info: (fg: "gray", bg: "#191319"),
@@ -35,19 +35,19 @@
     ),
     progress_bar: (
         symbols: ["█", "█", "█", "█", "█"],
-        track_style: (fg: "dark_gray"),
-        elapsed_style: (fg: "gray"),
-        thumb_style: (fg: "gray"),
+        track_style: (fg: "#443c44"),
+        elapsed_style: (fg: "red"),
+        thumb_style: (fg: "red"),
         use_track_when_empty: true,
     ),
     scrollbar: (
         symbols: ["│", "█", "▲", "▼"],
         track_style: (fg: "#888888"),
-        ends_style: (fg: "gray"),
-        thumb_style: (fg: "gray"),
+        ends_style: (fg: "#a8a8a8"),
+        thumb_style: (fg: "#a8a8a8"),
     ),
     tab_bar: (
-        active_style: (fg: "#191319", bg: "gray", modifiers: "Bold"),
+        active_style: (fg: "#191319", bg: "red", modifiers: "Bold"),
         inactive_style: (),
     ),
     lyrics: (
@@ -151,7 +151,7 @@
     components: {
         "title": Pane(Property(
             content: [
-                (kind: Property(Song(Title)), style: (modifiers: "Bold"),
+                (kind: Property(Song(Title)), style: (fg: "red", modifiers: "Bold"),
                     default: (kind: Text("No Song"), style: (modifiers: "Bold"))),
             ], align: Left, scroll_speed: 1
         )),
@@ -159,7 +159,7 @@
             direction: Horizontal,
             panes: [
                 (size: "1", pane: Pane(Property(content: [(kind: Text(""))]))),
-                (size: "100%", pane: Pane(Volume(kind: Slider(symbols: (filled: "─", thumb: "●", track: "─"), filled_style: (fg: "gray"), thumb_style: (fg: "gray"))))),
+                (size: "100%", pane: Pane(Volume(kind: Slider(symbols: (filled: "─", thumb: "●", track: "─"), filled_style: (fg: "red"), thumb_style: (fg: "red"), track_style: (fg: "#443c44"))))),
                 (size: "4", pane: Pane(Property(content: [(kind: Property(Status(Volume)), style: (fg: "gray"))], align: Right))),
                 (size: "2", pane: Pane(Property(content: [(kind: Text("%"), style: (fg: "gray"))]))),
             ],
