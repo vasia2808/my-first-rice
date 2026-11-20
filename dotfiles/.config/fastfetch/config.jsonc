@@ -21,12 +21,12 @@
   "modules": [
     "title",
     {
-      "type": "separator",
-      "outputColor": "#b4b4b4"
-    },
-    {
       "type": "uptime",
       "key": ""
+    },
+    {
+      "type": "kernel",
+      "key": ""
     },
     {
       "type": "cpu",
