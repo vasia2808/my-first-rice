@@ -159,7 +159,7 @@
             direction: Horizontal,
             panes: [
                 (size: "1", pane: Pane(Property(content: [(kind: Text(""))]))),
-                (size: "100%", pane: Pane(Volume(kind: Slider(symbols: (filled: "─", thumb: "●", track: "─"), filled_style: (fg: "red"), thumb_style: (fg: "red"), track_style: (fg: "#443c44"))))),
+                (size: "100%", pane: Pane(Volume(kind: Slider(symbols: (filled: "─", thumb: "●", track: "─"), filled_style: (fg: "red"), thumb_style: (fg: "red"), track_style: (fg: "#605760"))))),
                 (size: "4", pane: Pane(Property(content: [(kind: Property(Status(Volume)), style: (fg: "gray"))], align: Right))),
                 (size: "2", pane: Pane(Property(content: [(kind: Text("%"), style: (fg: "gray"))]))),
             ],
