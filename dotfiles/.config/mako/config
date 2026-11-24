@@ -8,4 +8,5 @@ margin=4
 padding=10
 max-icon-size=48
 width=350
+layer=overlay
 
