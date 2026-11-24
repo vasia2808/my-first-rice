@@ -7,7 +7,8 @@ file_path="$HOME/Pictures/Screenshots/$file_name"
 
 grim -l 1 "$file_path"
 
-"$SCRIPT_DIR/screenshot-dim"
+"$SCRIPT_DIR/screenshot-dim" &
+sleep 0.3
 
 action=$(notify-send -i "$file_path" --action='default=xxx' "Screenshot captured" "$file_name")
 
