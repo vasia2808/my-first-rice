@@ -15,6 +15,7 @@ packages=(
     firefox
     flacon
     grim
+    gtk4-layer-shell
     gvfs-mtp
     hypridle
     hyprland

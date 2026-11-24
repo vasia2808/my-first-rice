@@ -166,7 +166,7 @@ hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
-hl.bind("Print", hl.dsp.exec_cmd("$XDG_CONFIG_HOME/hypr/scripts/screenshot.sh"))
+hl.bind("Print", hl.dsp.exec_cmd("$XDG_CONFIG_HOME/hypr/scripts/screenshot.sh"), { locked = true })
 hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd("wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 2%+"), { locked = true, repeating = true })
 hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd("wpctl set-volume @DEFAULT_AUDIO_SINK@ 2%-"), { locked = true, repeating = true })
 hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"), { locked = true })
@@ -230,6 +230,12 @@ hl.layer_rule({
 
 hl.layer_rule({
   match = { namespace = [[^notifications$]] },
-  animation = "slide right"
+  animation = "slide right",
+  above_lock = 1
+})
+
+hl.layer_rule({
+  match = { namespace = [[^screenshot-dim$]] },
+  above_lock = 1
 })
 
