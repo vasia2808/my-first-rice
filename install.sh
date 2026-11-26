@@ -35,6 +35,7 @@ packages=(
     qimgv
     realtime-privileges
     rofi-wayland
+    spice-vdagent
     thunar
     thunar-archive-plugin
     ttf-jetbrains-mono-nerd
