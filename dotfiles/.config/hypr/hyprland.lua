@@ -27,6 +27,7 @@ hl.env("GTK_THEME", "Material-Black-Cherry-BE-Custom")
 
 hl.on("hyprland.start", function() 
   hl.exec_cmd("dbus-update-activation-environment --systemd XDG_SESSION_TYPE XDG_CURRENT_DESKTOP XDG_SESSION_DESKTOP")
+  hl.exec_cmd("$HOME/.config/hypr/scripts/spice-resize.sh")
   hl.exec_cmd("hyprpaper")
   hl.exec_cmd("waybar")
   hl.exec_cmd("hypridle")
