@@ -103,6 +103,8 @@ if [ ! -e "/usr/bin/konsole" ]; then
     sudo ln -s /usr/bin/alacritty /usr/bin/konsole
 fi
 
-sudo cp -r getty@tty1.service.d /etc/systemd/system
+sudo mkdir -p "/etc/systemd/system/getty@tty1.service.d"
+echo -e "[Service]\nExecStart=\nExecStart=-/usr/bin/agetty --autologin $USER --noclear %I $TERM" | sudo tee "/etc/systemd/system/getty@tty1.service.d/override.conf"
+
 sudo usermod -aG realtime $USER
 
