@@ -119,7 +119,6 @@
         "modules": [
             "custom/power",
             "custom/lock",
-            "custom/logout",
             "custom/reboot"
         ]
     },
@@ -132,11 +131,6 @@
         "format": "<span color='#d1524d'>󰍁</span>",
         "tooltip": false,
         "on-click": "hyprlock"
-    },
-    "custom/logout": {
-        "format": "<span color='#d1524d'>󰍃</span>",
-        "tooltip": false,
-        "on-click": "hyprctl dispatch 'hl.dsp.exit()'"
     },
     "custom/reboot": {
         "format": "<span color='#d1524d'></span>",
