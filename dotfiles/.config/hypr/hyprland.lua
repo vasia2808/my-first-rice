@@ -1,6 +1,6 @@
 hl.monitor({
-  output = "HDMI-A-1",
-  mode = "1920x1080@60",
+  output = "Virtual-1",
+  mode = "preferred",
   position = "0x0",
   scale = 1
 })
@@ -33,23 +33,6 @@ hl.on("hyprland.start", function()
   hl.exec_cmd("/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1")
   hl.exec_cmd("wl-clip-persist --clipboard regular")
   hl.exec_cmd("playerctld daemon")
-
-  hl.exec_cmd("qbittorrent")
-  hl.exec_cmd("Telegram -startintray")
-  hl.exec_cmd("firefox")
-
-  hl.exec_cmd("hyprlock")
-end)
-
-local qbittorrent_handler
-
-qbittorrent_handler = hl.on("window.open", function(window)
-  if window.class == "org.qbittorrent.qBittorrent" then
-    hl.timer(function()
-      hl.dispatch(hl.dsp.window.close({ window = window }))
-    end, { timeout = 1000, type = "oneshot" })
-    qbittorrent_handler:remove()
-  end
 end)
 
 hl.config({
@@ -142,7 +125,6 @@ hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
 hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("loginctl lock-session"))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd("firefox"))
-hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("pkill -x rmpc || alacritty -e rmpc"))
 
 hl.bind(mainMod .. " + S", hl.dsp.window.swap({ next = true }))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.swap({ prev = true }))
@@ -173,8 +155,6 @@ hl.bind("XF86AudioMute", hl.dsp.exec_cmd("wpctl set-mute @DEFAULT_AUDIO_SINK@ to
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl -p \"$(playerctl -l | head -n1)\" previous"), { locked = true })
 hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl -p \"$(playerctl -l | head -n1)\" next"), { locked = true })
-hl.bind("XF86MonBrightnessUp", hl.dsp.exec_cmd("brightnessctl set 2%+"), { locked = true, repeating = true })
-hl.bind("XF86MonBrightnessDown", hl.dsp.exec_cmd("brightnessctl set 2%-"), { locked = true, repeating = true })
 
 hl.workspace_rule({ workspace = "w[tv1]", gaps_out = 0 })
 hl.workspace_rule({ workspace = "f[1]", gaps_out = 0 })
@@ -205,11 +185,6 @@ hl.window_rule({
 hl.window_rule({
   match = { class = [[^qimgv$]] },
   suppress_event = "maximize"
-})
-
-hl.window_rule({
-  match = { class = [[^org\.qbittorrent\.qBittorrent$]], title = [[negative:^qBittorrent.*$]] },
-  float = true
 })
 
 hl.window_rule({

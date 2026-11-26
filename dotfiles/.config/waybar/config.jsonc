@@ -13,7 +13,6 @@
         "tray",
         "custom/warp",
         "wireplumber",
-        "backlight",
         "hyprland/language",
         "clock",
         "group/power"
@@ -56,8 +55,6 @@
     "tray": {
         "spacing": 10,
         "orders": {
-            "TelegramDesktop": 1,
-            "qBittorrent": 2
         }
     },
     "custom/warp": {
@@ -77,16 +74,6 @@
         "on-click-forward": "bash \"$XDG_CONFIG_HOME/waybar/scripts/change_sink.sh\" next",
         "on-click-backward": "bash \"$XDG_CONFIG_HOME/waybar/scripts/change_sink.sh\" previous"
 
-    },
-    "backlight": {
-        "format": "<span color='#d1524d'>󰃠</span> {percent}%",
-        "tooltip": false,
-        "scroll-step": 2,
-        "on-click-forward": "brightnessctl set 10%+",
-        "on-click-backward": "brightnessctl set 10%-",
-        "on-click": "brightnessctl set 0%",
-        "on-click-middle": "brightnessctl set 50%",
-        "on-click-right": "brightnessctl set 100%"
     },
     "network": {
         "format-wifi": "<span color='#d1524d'></span> {signalStrength}%",
@@ -132,7 +119,7 @@
         "modules": [
             "custom/power",
             "custom/lock",
-            "custom/suspend",
+            "custom/logout",
             "custom/reboot"
         ]
     },
@@ -146,10 +133,10 @@
         "tooltip": false,
         "on-click": "hyprlock"
     },
-    "custom/suspend": {
-        "format": "<span color='#d1524d'></span>",
+    "custom/logout": {
+        "format": "<span color='#d1524d'>󰍃</span>",
         "tooltip": false,
-        "on-click": "systemctl suspend"
+        "on-click": "hyprctl dispatch 'hl.dsp.exit()'"
     },
     "custom/reboot": {
         "format": "<span color='#d1524d'></span>",

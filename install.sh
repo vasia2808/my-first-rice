@@ -13,7 +13,6 @@ packages=(
     ffmpeg-audio-thumbnailer
     ffmpegthumbnailer
     firefox
-    flacon
     grim
     gtk4-layer-shell
     gvfs-mtp
@@ -21,12 +20,7 @@ packages=(
     hyprland
     hyprlock
     hyprpaper
-    kid3-qt
     mako
-    mpd
-    mpd-mpris
-    mpv
-    mpv-mpris
     neovim
     noto-fonts
     noto-fonts-cjk
@@ -38,12 +32,9 @@ packages=(
     pipewire-pulse
     playerctl
     polkit-gnome
-    qbittorrent
     qimgv
     realtime-privileges
-    rmpc
     rofi-wayland
-    telegram-desktop
     thunar
     thunar-archive-plugin
     ttf-jetbrains-mono-nerd
@@ -92,12 +83,6 @@ gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
 gsettings set org.gnome.desktop.interface icon-theme 'Material-Black-Cherry-Numix-Custom'
 gsettings set org.gnome.desktop.wm.preferences button-layout ':'
 gsettings set org.gnome.desktop.interface font-name 'JetBrainsMono Nerd Font 11'
-
-mkdir -p "$HOME/.local/share/mpd/playlists"
-mkdir -p "$HOME/.local/state/mpd"
-
-systemctl --user enable mpd
-systemctl --user enable mpd-mpris
 
 if [ ! -e "/usr/bin/konsole" ]; then
     sudo ln -s /usr/bin/alacritty /usr/bin/konsole
