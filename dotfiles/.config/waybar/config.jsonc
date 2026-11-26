@@ -84,12 +84,12 @@
         "format-en": "<span color='#d1524d'>󰌌</span> EN",
         "format-ru": "<span color='#d1524d'>󰌌</span> RU",
         "format-uk": "<span color='#d1524d'>󰌌</span> UA",
-        "on-click": "hyprctl switchxkblayout obins-obins-annepro2 next",
-        "on-click-right": "hyprctl switchxkblayout obins-obins-annepro2 prev",
-        "on-scroll-up": "hyprctl switchxkblayout obins-obins-annepro2 next",
-        "on-scroll-down": "hyprctl switchxkblayout obins-obins-annepro2 prev",
-        "on-click-forward": "hyprctl switchxkblayout obins-obins-annepro2 next",
-        "on-click-backward": "hyprctl switchxkblayout obins-obins-annepro2 prev"
+        "on-click": "hyprctl switchxkblayout current next",
+        "on-click-right": "hyprctl switchxkblayout current prev",
+        "on-scroll-up": "hyprctl switchxkblayout current next",
+        "on-scroll-down": "hyprctl switchxkblayout current prev",
+        "on-click-forward": "hyprctl switchxkblayout current next",
+        "on-click-backward": "hyprctl switchxkblayout current prev"
     },
     "clock": {
         "format": "<span color='#d1524d'>󰥔</span> {:%H:%M}",
