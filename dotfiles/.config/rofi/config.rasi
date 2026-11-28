@@ -146,6 +146,7 @@ configuration {
 	me-select-entry: "";
 	me-accept-entry: "MousePrimary";
 /*	me-accept-custom: "Control+MouseDPrimary";*/
+    wayland-layer: "top";
   timeout {
     action: "kb-cancel";
     delay:  0;
