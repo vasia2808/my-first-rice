@@ -200,6 +200,7 @@ hl.window_rule({
 
 hl.layer_rule({
   match = { namespace = [[^rofi$]] },
+  order = 1,
   animation = "slide top",
   dim_around = true
 })
@@ -212,6 +213,7 @@ hl.layer_rule({
 
 hl.layer_rule({
   match = { namespace = [[^screenshot-dim$]] },
+  no_anim = true,
   above_lock = 1
 })
 
